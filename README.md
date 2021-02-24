@@ -1,5 +1,11 @@
 ## TEMP TODO
 
+LEFT OFF:
+https://www.gatsbyjs.com/plugins/gatsby-source-contentful/?=contentful%20reading
+https://app.contentful.com/spaces/fuphm5rb1rwy/content_types
+https://github.com/WilderDev/gatsby-blog-workflow-template/blob/main/gatsby-node.js
+https://www.figma.com/file/Hfsn3XaYiJGcTZ8bWp3Gw1/Landing-Page?node-id=0%3A1
+
 # Info
 
 1. Brainstorm Ideas
@@ -42,8 +48,7 @@ Keywords:
 
 # Features
 
-1. Contenful (Schema: Blog Post, Recipe) (Title, Subtitle, Date, Slug, Intro, Featured Image, recipe, Body, Summary, allow comments?, tags, Keywords?) (Title: Use Numbers, Data, Authority, Power-Words, Helping, Suggesting, Evidence, Hinting, Problem/Solution, Relevant, Emotional, Urgency, First 3 words & Last 3 words, 60-100 characters, Crisp + Clear, Active Voice
-   ) (Body: Lots of images, resources, internal links to your blog posts)
+1. Contenful (Schema: Blog Post, Recipe) (Title, Subtitle, Date, Slug, Intro, Featured Image, recipe, Body, Summary, allow comments?, tags, Keywords?) (Body: Lots of images, resources, internal links to your blog posts)
 2. Netlify
 3. Bakers Percentage
 4. RSS
@@ -52,7 +57,7 @@ Keywords:
 
 # Extra
 
-1. SEO
+1. SEO [https://github.com/WilderDev/gatsby-blog-workflow-template/blob/main/src/utils/helpers/SEO.js]
 2. Lady Bug eating the page
 3. Animations / Loaders
 4. Webhooks
