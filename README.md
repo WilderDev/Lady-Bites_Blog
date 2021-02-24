@@ -9,6 +9,7 @@
 4. Brainstorm Ideas
 5. Domain Name?
 6. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
+7. Design [https://www.gatsbyjs.com/plugins/gatsby-plugin-readingtime-contentful/]
 
 # Brand
 

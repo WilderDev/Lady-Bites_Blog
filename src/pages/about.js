@@ -10,7 +10,7 @@ const About = () => (
     <SEO title="About" />
     <header className={Styles.container}>
       <h1>Hi from the About Page</h1>
-      <p>I Lady. I Bite things.</p>
+      <p>I Lady. I Bite Things.</p>
     </header>
   </Layout>
 );

@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <header className={Styles.container}>
       <h1>Lady-Bites Blog</h1>
-      <h2>Home of Wonderfully Delicious Recipes & All Things FOOD!</h2>
+      <h2>What That Mouth Do. . .</h2>
     </header>
   </Layout>
 );

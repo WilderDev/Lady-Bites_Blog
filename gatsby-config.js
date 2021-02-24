@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Lady Bites Blog`,
-    description: `Little bites, big bites . . . Lady Bites`, // tsk: better slogan
-    author: `@LaurenLadyBites`, // tsk: ask for her twitter handle
+    description: `Blog website for Lady-Bites Brand - Recipes, Videos & Blogs`,
+    author: `@LaurenLadyBites`, // tsk: ask for her twitter handle,
+    siteUrl: `https://ladybites.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-preact`,
@@ -31,6 +32,7 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
   ],
 };
