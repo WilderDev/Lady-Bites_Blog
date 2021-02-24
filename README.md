@@ -2,11 +2,11 @@
 
 # Info
 
-1. Ask lady to sign up to contentful
 2. Pick Fonts
 3. Pick Colors
 4. Slogan
-5. Logo / Favicon
+5. Logo / Favicon cookie
+
 6. Features (Video, Blog, Recipes?, Contact Form?, Comments?)
 7. Brainstorm Ideas
 8. Domain Name?
@@ -19,11 +19,12 @@ Accent/Headings:
 Body:
 
 **Colors**
-Primary: # - [# , # , #]
-Secondary: # - [# , # , #]
-Dark: [#,]
-Light: [#,]
-Grays: [#,]
+Primary: #ABEDFF - [#C4F2FF , #b9f2ff , #003d4e]  
+Secondary: [#B8CAFF, #fdfff5]
+Accent: #FFF691
+Dark: #010203
+Light: #fdfff5
+Grays: [#999999, #666666, #7a7a7a, #bfbfbf]
 
 **Copywriting**
 Domain:

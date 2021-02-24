@@ -1,3 +1,10 @@
+:root {
+  --clr-prm: #abedff;
+  --clr-prm-2: #c4f2ff;
+  --clr-prm-3: #b9f2ff;
+  --clr-prm-4: #003d4e;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
