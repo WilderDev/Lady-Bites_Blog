@@ -38,8 +38,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    "gatsby-plugin-readingtime-contentful",
-    `gatsby-plugin-react-helmet`,
+    // "gatsby-plugin-readingtime-contentful",
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {
@@ -139,13 +138,13 @@ module.exports = {
         scope: `.`,
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         createLinkInHead: true,
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-offline`,
   ],
 };
