@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lady Bites Blog`,
     description: `Little bites, big bites . . . Lady Bites`, // tsk: better slogan
-    author: `@`, // tsk: ask for her twitter handle
+    author: `@LaurenLadyBites`, // tsk: ask for her twitter handle
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,7 +29,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-
+    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
   ],
 };

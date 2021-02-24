@@ -3,10 +3,15 @@ import React from "react";
 import Layout from "../utils/templates/Layout";
 import SEO from "../utils/templates/Seo";
 
+import Styles from "../styles/HomePage.module.scss";
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Lady Bites Blog</h1>
+    <header className={Styles.container}>
+      <h1>Lady-Bites Blog</h1>
+      <h2>Eat your Best</h2>
+    </header>
   </Layout>
 );
 
