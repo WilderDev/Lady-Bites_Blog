@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../../styles/global.css";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
       <Header />

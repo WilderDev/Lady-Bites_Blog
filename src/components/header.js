@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 // import Styles from "../styles/HomePage.module.scss";
 
 const Header = () => (
-  <nav aria-labelledby="Main Navigation Menu">
+  <nav role="navigation" aria-label="Main">
     <div>
       <ul>
         <li>
