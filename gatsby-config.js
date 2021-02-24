@@ -23,11 +23,41 @@ module.exports = {
       options: {
         name: `Lady Bites Blog`,
         short_name: `Lady Bites`,
+        description: `Create Blazing-Fast Blogs in Record Time.`,
         start_url: `/`,
-        background_color: `#663399`, // tsk
-        theme_color: `#663399`, // tsk
+        background_color: `#fdfff5`,
+        theme_color: `#ABEDFF`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        orientation: `natural`,
+        icon: `src/images/icon/android-chrome-512x512.png`,
+        icons: [
+          {
+            src: `src/utils/icons/apple-touch-icon.png`,
+            sizes: `64x64`,
+            type: `image/png`,
+          },
+          {
+            src: `src/utils/icons/maskable-icon.png`,
+            sizes: `53x53`,
+            type: `image/png`,
+            purpose: `maskable`,
+          },
+          {
+            src: `src/utils/icons/android-chrome-256x256.png`,
+            sizes: `256x256`,
+            type: `image/png`,
+            purpose: `any`,
+          },
+          {
+            src: `src/utils/icons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+            purpose: `any`,
+          },
+        ],
+        lang: `en-US`,
+        dir: `ltr`,
+        scope: `.`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
