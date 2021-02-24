@@ -10,6 +10,7 @@
 6. Features (Video, Blog, Recipes?, Contact Form?, Comments?)
 7. Brainstorm Ideas
 8. Domain Name?
+9. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
 
 # Brand
 
@@ -63,5 +64,6 @@ Keywords:
 5. Page Transitions
 6. Accessability
 7. Search Functionality
-8. Netlify plugins to test (hashfiles, inline source, subfont)
-9. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
+8. Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
+9. Netlify plugins to test (hashfiles, inline source, subfont)
+10. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
