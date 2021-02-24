@@ -1,3 +1,6 @@
+require("typeface-josefin-sans");
+require("typeface-raleway");
+
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `This application has been updated. ` +

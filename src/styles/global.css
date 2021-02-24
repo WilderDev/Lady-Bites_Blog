@@ -3,6 +3,18 @@
   --clr-prm-2: #c4f2ff;
   --clr-prm-3: #b9f2ff;
   --clr-prm-4: #003d4e;
+  --crl-scd: #b8caff;
+  --clr-scd-2: #fdfff5;
+  --clr-acc: #fff691;
+  --clr-drk: #010203;
+  --clr-lg: #fdfff5;
+  --clr-gry: #999999;
+  --clr-gry-2: #666666;
+  --clr-gry-3: #7a7a7a;
+  --clr-gry-4: #bfbfbf;
+
+  --ff-prm: "Raleway", sans-serif;
+  --ff-acc: "Josefin Sans", sans-serif;
 }
 
 html {
@@ -14,6 +26,10 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: var(--ff-prm);
 }
 
 body,
@@ -28,7 +44,17 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: 300;
+  color: var(--clr-drk);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-acc);
 }
 
 h1 {
