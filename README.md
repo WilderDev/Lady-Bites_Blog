@@ -2,15 +2,13 @@
 
 # Info
 
-2. Pick Fonts
-3. Pick Colors
-4. Slogan
-5. Logo / Favicon cookie
+1. Slogan
+2. Logo / Favicon cookie
 
-6. Features (Video, Blog, Recipes?, Contact Form?, Comments?)
-7. Brainstorm Ideas
-8. Domain Name?
-9. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
+3. Features (Video, Blog, Recipes?, Contact Form?, Comments?)
+4. Brainstorm Ideas
+5. Domain Name?
+6. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
 
 # Brand
 

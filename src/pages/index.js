@@ -1,18 +1,20 @@
 import React from "react";
 
-import Layout from "../templates/layout";
-import SEO from "../templates/seo";
+// import Layout from "../templates/layout";
+// import SEO from "../templates/seo";
 
 import Styles from "../styles/HomePage.module.scss";
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  // <Layout>
+  <>
+    {/* <SEO title="Home" /> */}
     <header className={Styles.container}>
       <h1>Lady-Bites Blog</h1>
-      <h2>Eat your Best</h2>
+      <h2>Home of Wonderfully Delicious Recipes & All Things FOOD!</h2>
     </header>
-  </Layout>
+  </>
+  // </Layout>
 );
 
 export default IndexPage;
