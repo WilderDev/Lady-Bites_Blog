@@ -2,20 +2,16 @@
 
 # Info
 
-1. Slogan
-2. Logo / Favicon cookie
-
-3. Features (Video, Blog, Recipes?, Contact Form?, Comments?)
-4. Brainstorm Ideas
-5. Domain Name?
-6. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
-7. Design [https://www.gatsbyjs.com/plugins/gatsby-plugin-readingtime-contentful/]
+1. Brainstorm Ideas
+2. Domain Name?
+3. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
+4. Design [https://www.gatsbyjs.com/plugins/gatsby-plugin-readingtime-contentful/]
 
 # Brand
 
 **Fonts**
-Accent/Headings:
-Body:
+Accent/Headings: Raleway
+Body: Josefin Sans
 
 **Colors**
 Primary: #ABEDFF - [#C4F2FF , #b9f2ff , #003d4e]  
@@ -27,10 +23,11 @@ Grays: [#999999, #666666, #7a7a7a, #bfbfbf]
 
 **Copywriting**
 Domain:
-Slogan:
+Slogan: What That Mouth Do. . .
 Keywords:
 
 **Logo**
+![Half Eaten Cookie Illustration](src/images/icon/favicon-32x32.png)
 
 ---
 
@@ -45,15 +42,13 @@ Keywords:
 
 # Features
 
-1. Contenful (Schema: Blog Post, Recipe) (Title, Subtitle, Date, Slug, Intro, Featured Image, Body, Summary, allow comments?, Keywords?) (Title: Use Numbers, Data, Authority, Power-Words, Helping, Suggesting, Evidence, Hinting, Problem/Solution, Relevant, Emotional, Urgency, First 3 words & Last 3 words, 60-100 characters, Crisp + Clear, Active Voice
+1. Contenful (Schema: Blog Post, Recipe) (Title, Subtitle, Date, Slug, Intro, Featured Image, recipe, Body, Summary, allow comments?, Keywords?) (Title: Use Numbers, Data, Authority, Power-Words, Helping, Suggesting, Evidence, Hinting, Problem/Solution, Relevant, Emotional, Urgency, First 3 words & Last 3 words, 60-100 characters, Crisp + Clear, Active Voice
    ) (Body: Lots of images, resources, internal links to your blog posts)
 2. Netlify
-3. Prev + Next Links
-4. Bakers Percentage
-5. Meal Substitutes
-6. RSS
-7. Social Sharing
-8. Video Embed
+3. Bakers Percentage
+4. RSS
+5. Social Sharing
+6. Video Embed
 
 # Extra
 
@@ -64,6 +59,7 @@ Keywords:
 5. Page Transitions
 6. Accessability
 7. Search Functionality
-8. Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
-9. Netlify plugins to test (hashfiles, inline source, subfont)
-10. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
+8. Prev + Next Links
+9. Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
+10. Netlify plugins to test (hashfiles, inline source, subfont)
+11. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
