@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../templates/Layout";
-import SEO from "../templates/Seo";
+import Layout from "../templates/layout";
+import SEO from "../templates/seo";
 
 import Styles from "../styles/HomePage.module.scss";
 
