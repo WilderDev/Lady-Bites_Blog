@@ -11,6 +11,26 @@
 7. Brainstorm Ideas
 8. Domain Name?
 
+# Brand
+
+**Fonts**
+Accent/Headings:
+Body:
+
+**Colors**
+Primary: # - [# , # , #]
+Secondary: # - [# , # , #]
+Dark: [#,]
+Light: [#,]
+Grays: [#,]
+
+**Copywriting**
+Domain:
+Slogan:
+Keywords:
+
+**Logo**
+
 ---
 
 # Pages
@@ -32,6 +52,7 @@
 5. Meal Substitutes
 6. RSS
 7. Social Sharing
+8. Video Embed
 
 # Extra
 

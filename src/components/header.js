@@ -8,14 +8,16 @@ const Header = () => (
     <div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <i>&#9673;</i> Lady Logo
+          </Link>
         </li>
       </ul>
     </div>
     <div>
       <ul>
         <li>
-          <Link></Link>
+          <Link to=""></Link>
         </li>
       </ul>
     </div>
