@@ -6,7 +6,7 @@
 2. Pick Fonts
 3. Pick Colors
 4. Slogan
-5. Logo
+5. Logo / Favicon
 6. Features (Video, Blog, Recipes?, Contact Form?, Comments?)
 7. Brainstorm Ideas
 
@@ -28,6 +28,8 @@
 3. Prev + Next Links
 4. Bakers Percentage
 5. Meal Substitutes
+6. RSS
+7. Social Sharing
 
 # Extra
 
@@ -37,3 +39,4 @@
 4. Web Push
 5. Page Transitions
 6. Accessability
+7. Search Functionality
