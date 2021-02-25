@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <header className={Styles.container}>
       <StaticImage
-        src="../images/coffee-bg-main.jpg"
+        src="../images/coffee-bg-main-2.jpg"
         alt="Two cups of whip-cream decorated coffee on a wooden table"
         placeholder="blurred"
         layout="fullWidth"
@@ -21,6 +21,7 @@ const IndexPage = () => (
           zIndex: "-999",
         }}
         quality={100}
+        breakpoins={[750, 1080, 1366]}
       />
       <section className={Styles.heroText}>
         <h1>Lady Bites Blog</h1>

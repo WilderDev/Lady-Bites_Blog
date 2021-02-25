@@ -3,11 +3,54 @@
   z-index: 1;
   width: 39%;
 
-  ul > li > a {
-    color: #fbfbfb;
-    text-decoration: none;
-    font-size: 1.4rem;
-    letter-spacing: 1.2px;
+  ul > li {
+    a {
+      color: #fbfbfb;
+      text-decoration: none;
+      font-size: 1.4rem;
+      letter-spacing: 1.2px;
+
+      transition: text-decoration 250ms ease-in-out;
+      position: relative;
+      outline: none;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        transition: 250ms ease-in-out;
+        transition-duration: 0.75s;
+        opacity: 0;
+        background-color: darken(#abedff, 5%);
+      }
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+      &:focus {
+        &:before,
+        &:after {
+          width: 50%;
+          opacity: 1;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      a {
+        &:before,
+        &:after {
+          width: 50%;
+          opacity: 1;
+        }
+      }
+    }
   }
 
   ul {
