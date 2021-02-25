@@ -37,6 +37,12 @@ Keywords:
 
 ---
 
+# Perfect Google Lighthouse Score
+
+![Split-Screen of google lighthouse 100 PWA and Home Landing of Lady Bites Blog Website](./src/images/Lady%20Bites%20100GL.png)
+
+---
+
 # Pages
 
 1. Home

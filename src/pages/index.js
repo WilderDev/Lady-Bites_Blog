@@ -21,7 +21,8 @@ const IndexPage = () => (
           zIndex: "-999",
         }}
         quality={100}
-        breakpoins={[750, 1080, 1366]}
+        width="100%"
+        height="100%"
       />
       <section className={Styles.heroText}>
         <h1>Lady Bites Blog</h1>
