@@ -9,9 +9,19 @@
 .heroText {
   position: absolute;
   top: 30%;
+  padding-left: 37px;
 
   h1,
   h2 {
     color: #fbfbfb;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 5.625rem;
+  }
+
+  h2 {
+    padding-left: 9px;
   }
 }

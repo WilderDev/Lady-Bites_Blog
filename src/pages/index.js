@@ -10,16 +10,17 @@ const IndexPage = () => (
     <SEO title="Home" />
     <header className={Styles.container}>
       <StaticImage
-        src="../images/cups-of-coffee-bg.jpg"
+        src="../images/coffee-bg-main.jpg"
         alt="Two cups of whip-cream decorated coffee on a wooden table"
         placeholder="blurred"
         layout="fullWidth"
         loading="eager"
-        style={{ maxHeight: "100vh", minHeight: "100vh", zIndex: "-2" }}
-        transformOptions={{ shadow: "string" }}
+        style={{
+          maxHeight: "100vh",
+          minHeight: "100vh",
+          zIndex: "-999",
+        }}
         quality={100}
-        objectFit
-        objectPosition
       />
       <section className={Styles.heroText}>
         <h1>Lady Bites Blog</h1>
