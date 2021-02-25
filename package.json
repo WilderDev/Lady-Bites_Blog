@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "William Wilder <williamjohnwilder@outlook.com>",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "gatsby": "^2.32.3",
     "gatsby-plugin-gatsby-cloud": "^1.0.1",
     "gatsby-plugin-image": "^0.7.1",

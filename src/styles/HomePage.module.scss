@@ -1,8 +1,38 @@
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .container {
   position: relative;
   min-height: 100vh;
   max-height: 100vh;
   margin: 0;
+
+  .downArrow {
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+    color: #fbfbfb;
+    transition: all 350ms ease-in;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.15);
+      color: #abedff;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    .arrowIcon {
+      font-size: 2.2rem;
+    }
+  }
 }
 
 .heroText {
@@ -38,6 +68,14 @@
         transform: scale(1.05);
       }
     }
+  }
+}
+
+.belowFold {
+  min-height: 100vh;
+
+  h3 {
+    font-size: 5rem;
   }
 }
 

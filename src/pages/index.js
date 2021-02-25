@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Styles from "../styles/HomePage.module.scss";
+import { AiFillDownCircle } from "@react-icons/all-files/ai/AiFillDownCircle";
 
 const IndexPage = () => (
   <Layout>
@@ -29,8 +30,15 @@ const IndexPage = () => (
         <h2>
           Happy Belly <span>Whole Heart</span>
         </h2>
+        <p>Typeerpye</p>
       </section>
+      <a href="#BelowTheFold" className={Styles.downArrow}>
+        <AiFillDownCircle className={Styles.arrowIcon} />
+      </a>
     </header>
+    <section className={Styles.belowFold} id="BelowTheFold">
+      <h3>Hey</h3>
+    </section>
   </Layout>
 );
 
