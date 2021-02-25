@@ -1,4 +1,17 @@
 .container {
-  width: 90%;
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
   background: var(--color-prm);
+}
+
+.heroText {
+  position: absolute;
+  top: 30%;
+
+  h1,
+  h2 {
+    color: #fbfbfb;
+  }
 }
