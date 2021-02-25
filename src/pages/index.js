@@ -26,7 +26,9 @@ const IndexPage = () => (
       />
       <section className={Styles.heroText}>
         <h1>Lady Bites Blog</h1>
-        <h2>What That Mouth Do!</h2>
+        <h2>
+          Happy Belly <span>Whole Heart</span>
+        </h2>
       </section>
     </header>
   </Layout>
