@@ -1,10 +1,17 @@
 ## TEMP TODO
 
 LEFT OFF:
-https://www.gatsbyjs.com/plugins/gatsby-source-contentful/?=contentful%20reading
-https://app.contentful.com/spaces/fuphm5rb1rwy/content_types
-https://github.com/WilderDev/gatsby-blog-workflow-template/blob/main/gatsby-node.js
-https://www.figma.com/file/Hfsn3XaYiJGcTZ8bWp3Gw1/Landing-Page?node-id=0%3A1
+**Reading Time**: https://www.gatsbyjs.com/plugins/gatsby-source-contentful/?=contentful%20reading
+
+**Contentful**: https://app.contentful.com/spaces/fuphm5rb1rwy/content_types
+
+**Gatsby Node.js**: https://github.com/WilderDev/gatsby-blog-workflow-template/blob/main/gatsby-node.js
+
+**Design**: https://www.figma.com/file/Hfsn3XaYiJGcTZ8bWp3Gw1/Landing-Page?node-id=0%3A1
+
+**Circle Card Design**: https://codepen.io/blindingstars/pen/vEQORr
+
+**Blog to Help**: https://ibaslogic.com/gatsby-with-contentful-cms/
 
 # Info
 

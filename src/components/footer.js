@@ -1,7 +1,6 @@
 import React from "react";
 
 import Styles from "../styles/components/footer.module.scss";
-import { AiFillUpCircle } from "@react-icons/all-files/ai/AiFillUpCircle";
 
 const Footer = () => {
   return (

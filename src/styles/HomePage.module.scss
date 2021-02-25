@@ -37,14 +37,15 @@ body {
     flex-direction: column;
 
     span {
-      padding-top: 10px;
+      padding-top: 0px;
       color: #abedff;
       font-weight: 400;
-      transition: transform 400ms ease-in;
+      transition: all 400ms ease-in;
 
       &:hover {
         cursor: pointer;
         transform: scale(1.05);
+        padding-left: 12px;
       }
     }
   }
@@ -52,8 +53,8 @@ body {
 
 .downArrow {
   position: absolute;
-  bottom: 30px;
-  left: 35px;
+  bottom: 40px;
+  left: 40px;
   color: #fbfbfb;
   transition: all 350ms ease-in;
   outline: none;
@@ -65,7 +66,7 @@ body {
   }
 
   .arrowIcon {
-    font-size: 2.2rem;
+    font-size: 3.1rem;
   }
 }
 
