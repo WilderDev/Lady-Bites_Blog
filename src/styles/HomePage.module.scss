@@ -12,27 +12,6 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   margin: 0;
-
-  .downArrow {
-    position: absolute;
-    bottom: 30px;
-    left: 35px;
-    color: #fbfbfb;
-    transition: all 350ms ease-in;
-    outline: none;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.15);
-      color: #abedff;
-      border: 2px solid white;
-      border-radius: 50%;
-    }
-
-    .arrowIcon {
-      font-size: 2.2rem;
-    }
-  }
 }
 
 .heroText {
@@ -71,8 +50,40 @@ body {
   }
 }
 
+.downArrow {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  color: #fbfbfb;
+  transition: all 350ms ease-in;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    color: #abedff;
+  }
+
+  .arrowIcon {
+    font-size: 2.2rem;
+  }
+}
+
 .belowFold {
+  position: relative;
   min-height: 100vh;
+  max-height: 100vh;
+
+  h3 {
+    font-size: 5rem;
+  }
+}
+
+.homeBlog {
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #1c1a0d;
 
   h3 {
     font-size: 5rem;

@@ -5,11 +5,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Styles from "../styles/HomePage.module.scss";
 import { AiFillDownCircle } from "@react-icons/all-files/ai/AiFillDownCircle";
+import { AiFillUpCircle } from "@react-icons/all-files/ai/AiFillUpCircle";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <header className={Styles.container}>
+    <header className={Styles.container} id="Top">
       <StaticImage
         src="../images/coffee-bg-main-2.jpg"
         alt="Two cups of whip-cream decorated coffee on a wooden table"
@@ -37,7 +38,16 @@ const IndexPage = () => (
       </a>
     </header>
     <section className={Styles.belowFold} id="BelowTheFold">
-      <h3>Hey</h3>
+      <h3>Ladies Top Choice Recipes</h3>
+      <a href="#BlogPosts" className={Styles.downArrow}>
+        <AiFillDownCircle className={Styles.arrowIcon} />
+      </a>
+    </section>
+    <section className={Styles.homeBlog} id="BlogPosts">
+      <h3>Most Recent Posts</h3>
+      <a href="#Top" className={Styles.downArrow}>
+        <AiFillUpCircle className={Styles.arrowIcon} />
+      </a>
     </section>
   </Layout>
 );
