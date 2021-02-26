@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 
 import Styles from "../styles/BlogPage.module.scss";
 import SEO from "../components/seo";
@@ -25,6 +26,10 @@ const Blog = ({ data }) => {
             {allPosts.edges.map(({ node: post }) => (
               <article key={post.id}>
                 <Link to={`/blog/${post.slug}`}>
+                  <Img
+                    fixed={post.featuredImage.fixed}
+                    alt={post.featuredImage.description}
+                  />
                   <h3>{post.title}</h3>
                 </Link>
               </article>
@@ -53,23 +58,17 @@ export const AllPosts = graphql`
           publishDate(formatString: "MMMM DD, YYYY")
           keywordTags
           featuredImage {
-            gatsbyImageData(
-              width: 250
-              height: 150
-              placeholder: TRACED_SVG
-              layout: FIXED
-            )
             title
             description
-          }
-          attachedToRecipe
-          introduction {
-            internal {
-              content
+            fixed(height: 200, width: 250) {
+              ...GatsbyContentfulFixed_tracedSVG
             }
-          }
-          body {
-            body
+            # gatsbyImageData(
+            #   width: 250
+            #   height: 150
+            #   placeholder: TRACED_SVG
+            #   layout: FIXED
+            # )
           }
         }
       }
