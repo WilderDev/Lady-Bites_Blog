@@ -96,15 +96,14 @@
 }
 @media screen and (max-width: 325px) {
   .containerNav ul {
-    width: 93%;
+    div {
+      display: none;
+    }
 
     li {
       font-size: 0.9rem;
 
       &:nth-child(1) {
-        display: none;
-      }
-      &:nth-child(2) {
         display: none;
       }
     }
