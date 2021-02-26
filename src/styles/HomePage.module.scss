@@ -111,13 +111,16 @@ body {
   }
 }
 @media screen and (max-width: 541px) {
+  .container {
+    min-height: 95vh;
+  }
   .heroText {
-    top: 20%;
+    top: 15%;
     padding-left: 27px;
 
     h1 {
       max-width: 50%;
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
 
     h2 {
