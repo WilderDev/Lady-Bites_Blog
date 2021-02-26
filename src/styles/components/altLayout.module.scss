@@ -2,3 +2,9 @@
   min-height: calc(100vh - 100px);
   background: #fbfbfb;
 }
+
+@media screen and (max-width: 325px) {
+  .mainGroup {
+    min-height: 50vh;
+  }
+}

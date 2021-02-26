@@ -63,7 +63,7 @@ export const AllPosts = graphql`
           featuredImage {
             title
             description
-            fixed(height: 175, width: 350) {
+            fixed(height: 175, width: 325) {
               ...GatsbyContentfulFixed_tracedSVG
             }
             # gatsbyImageData(

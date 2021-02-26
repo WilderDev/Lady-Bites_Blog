@@ -66,3 +66,47 @@
     }
   }
 }
+
+@media screen and (max-width: 915px) {
+  .containerNav ul {
+    width: 65%;
+
+    li a {
+      font-size: 1.25rem;
+    }
+  }
+}
+@media screen and (max-width: 541px) {
+  .containerNav ul {
+    width: 80%;
+
+    li a {
+      font-size: 1.05rem;
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .containerNav ul {
+    width: 90%;
+
+    li a {
+      font-size: 0.95rem;
+    }
+  }
+}
+@media screen and (max-width: 325px) {
+  .containerNav ul {
+    width: 93%;
+
+    li {
+      font-size: 0.9rem;
+
+      &:nth-child(1) {
+        display: none;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
