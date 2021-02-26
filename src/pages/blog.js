@@ -30,7 +30,9 @@ const Blog = ({ data }) => {
                     fixed={post.featuredImage.fixed}
                     alt={post.featuredImage.description}
                   />
-                  <small>Published: {post.publishedDate}</small>
+                  <small>
+                    Published: <strong>{post.publishDate}</strong>
+                  </small>
                   <h3>{post.title}</h3>
                 </Link>
               </article>
