@@ -1,4 +1,4 @@
-main {
-  min-height: 100vh;
-  background: yellow;
+.mainGroup {
+  min-height: calc(100vh - 100px);
+  background: #fbfbfb;
 }

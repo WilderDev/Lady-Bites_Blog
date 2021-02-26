@@ -6,7 +6,20 @@ import Styles from "../styles/components/altHeader.module.scss";
 const AltHeader = () => {
   return (
     <nav className={Styles.containerNav}>
-      <h1>Alt Header</h1>
+      <ul>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/learning">Learning</Link>
+        </li>
+        <li>
+          <Link to="/recipes">Recipes</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
