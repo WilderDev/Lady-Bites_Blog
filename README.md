@@ -78,8 +78,10 @@ Keywords:
 6. Web Push
 7. Page Transitions
 8. Accessability
-9. Search Functionality
-10. Prev + Next Links
-11. Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
-12. Netlify plugins to test (hashfiles, inline source, subfont)
-13. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
+9. Content Preview [https://www.contentful.com/help/setup-content-preview/?utm_source=webapp&utm_medium=knowledge-base-content_preview&utm_campaign=in-app-help]
+10. \*Test Publish from contentful
+11. Search Functionality
+12. Prev + Next Links
+13. Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
+14. Netlify plugins to test (hashfiles, inline source, subfont)
+15. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
