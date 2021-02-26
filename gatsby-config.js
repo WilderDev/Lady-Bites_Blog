@@ -39,7 +39,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    "gatsby-plugin-readingtime-contentful",
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {

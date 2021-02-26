@@ -4,13 +4,13 @@ import Img from "gatsby-image";
 
 import Styles from "../styles/BlogPage.module.scss";
 import SEO from "../components/seo";
-import Layout from "../components/layout";
+import AltLayout from "../components/altLayout";
 
 const Blog = ({ data }) => {
   const allPosts = data.allContentfulBlogPost;
 
   return (
-    <Layout>
+    <AltLayout>
       <SEO
         title="Blog"
         // description
@@ -30,6 +30,7 @@ const Blog = ({ data }) => {
                     fixed={post.featuredImage.fixed}
                     alt={post.featuredImage.description}
                   />
+                  <small>Published: {post.publishedDate}</small>
                   <h3>{post.title}</h3>
                 </Link>
               </article>
@@ -37,7 +38,7 @@ const Blog = ({ data }) => {
           </section>
         </section>
       </section>
-    </Layout>
+    </AltLayout>
   );
 };
 

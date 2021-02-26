@@ -1,18 +1,18 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import AltLayout from "../components/altLayout";
 import SEO from "../components/seo";
 import Styles from "../styles/AboutPage.module.scss";
 
 const About = () => (
-  <Layout>
+  <AltLayout>
     <SEO title="About" />
     <header className={Styles.container}>
       <h1>Hi from the About Page</h1>
       <p>I Lady. I Bite Things.</p>
       {/* Contact Form */}
     </header>
-  </Layout>
+  </AltLayout>
 );
 
 export default About;

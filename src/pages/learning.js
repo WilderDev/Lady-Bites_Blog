@@ -2,17 +2,17 @@ import React from "react";
 
 import Styles from "../styles/LearningPage.module.scss";
 import SEO from "../components/seo";
-import Layout from "../components/layout";
+import AltLayout from "../components/altLayout";
 
 const Learning = () => {
   return (
-    <Layout>
+    <AltLayout>
       <SEO title="Learning" />;
       <section className={Styles.container}>
         <h1>Learning Page</h1>
         <h2>Courses, Videos & Informative Blogs</h2>
       </section>
-    </Layout>
+    </AltLayout>
   );
 };
 
