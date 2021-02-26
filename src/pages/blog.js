@@ -1,18 +1,38 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Styles from "../styles/BlogPage.module.scss";
 import SEO from "../components/seo";
+import Layout from "../components/layout";
 
-const Blog = () => {
-  <SEO title="Blog" />;
+const Blog = ({ data }) => {
+  const allPosts = data.allContentfulBlogPost;
+
   return (
-    <section className={Styles.container}>
-      <h1>Blog Page</h1>
-      <section className={Styles.allPostsContainer}>
-        <h2>All Posts</h2>
+    <Layout>
+      <SEO
+        title="Blog"
+        // description
+        //  keywords
+      />
+      ;
+      <section className={Styles.container}>
+        <h1>Ladies Blog Posts</h1>
+        <section className={Styles.allPostsContainer}>
+          <h2>All {allPosts.totalCount} Posts</h2>
+          <hr />
+          <section className={Styles.allArticles}>
+            {allPosts.edges.map(({ node: post }) => (
+              <article key={post.id}>
+                <Link to={`/blog/${post.slug}`}>
+                  <h3>{post.title}</h3>
+                </Link>
+              </article>
+            ))}
+          </section>
+        </section>
       </section>
-    </section>
+    </Layout>
   );
 };
 
@@ -20,9 +40,14 @@ export default Blog;
 
 export const AllPosts = graphql`
   query GetAllBlogPosts {
-    allContentfulBlogPost {
+    allContentfulBlogPost(
+      limit: 500
+      sort: { fields: publishDate, order: ASC }
+    ) {
+      totalCount
       edges {
         node {
+          id
           title
           slug
           publishDate(formatString: "MMMM DD, YYYY")
