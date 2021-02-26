@@ -18,9 +18,9 @@ const Blog = ({ data }) => {
       />
       ;
       <section className={Styles.container}>
-        <h1>Ladies Blog Posts</h1>
+        <h1>Ladies Bites Blog</h1>
         <section className={Styles.allPostsContainer}>
-          <h2>All {allPosts.totalCount} Posts</h2>
+          <h2>({allPosts.totalCount} Posts)</h2>
           <hr />
           <section className={Styles.allArticles}>
             {allPosts.edges.map(({ node: post }) => (
@@ -61,7 +61,7 @@ export const AllPosts = graphql`
           featuredImage {
             title
             description
-            fixed(height: 200, width: 250) {
+            fixed(height: 175, width: 350) {
               ...GatsbyContentfulFixed_tracedSVG
             }
             # gatsbyImageData(
