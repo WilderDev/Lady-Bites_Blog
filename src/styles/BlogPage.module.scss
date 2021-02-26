@@ -170,14 +170,19 @@
   }
 }
 @media screen and (max-width: 325px) {
-  .container {
-    margin-top: -350px;
-    transform: scale(0.75);
-    grid-gap: 0;
+  .allArticles {
+    width: 250px;
+    min-width: 250px;
+  }
 
-    .allArticles {
-      margin-top: -160px;
-      transform: scale(0.9);
+  article {
+    width: 250px;
+    max-width: 250px;
+
+    img {
+      max-height: 100px;
+      width: 100px;
+      max-width: 100px;
     }
   }
 }

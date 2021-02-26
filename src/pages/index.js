@@ -33,19 +33,41 @@ const IndexPage = () => (
         </h2>
         <p>Typeerpye</p>
       </section>
-      <a href="#BelowTheFold" className={Styles.downArrow}>
+      {/* // ! Change to buttons!!!! */}
+      <a
+        href="#BelowTheFold"
+        className={Styles.downArrow}
+        name="arrow"
+        rel="search"
+        type="button"
+        title="down arrow"
+      >
         <AiFillDownCircle className={Styles.arrowIcon} />
       </a>
     </header>
     <section className={Styles.belowFold} id="BelowTheFold">
       <h3>Ladies Top Choice Recipes</h3>
-      <a href="#BlogPosts" className={Styles.downArrow}>
+      <a
+        href="#BlogPosts"
+        className={Styles.downArrow}
+        name="arrow"
+        rel="search"
+        type="button"
+        title="down arrow"
+      >
         <AiFillDownCircle className={Styles.arrowIcon} />
       </a>
     </section>
     <section className={Styles.homeBlog} id="BlogPosts">
       <h3>Most Recent Posts</h3>
-      <a href="#Top" className={Styles.downArrow}>
+      <a
+        href="#Top"
+        className={Styles.downArrow}
+        name="arrow"
+        rel="search"
+        type="button"
+        title="up arrow"
+      >
         <AiFillUpCircle className={Styles.arrowIcon} />
       </a>
     </section>
