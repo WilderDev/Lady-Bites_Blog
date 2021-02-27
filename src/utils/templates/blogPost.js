@@ -9,7 +9,7 @@ import SEO from "../../components/seo";
 import { AiOutlineArrowRight } from "@react-icons/all-files/ai/AiOutlineArrowRight";
 import { AiOutlineArrowLeft } from "@react-icons/all-files/ai/AiOutlineArrowLeft";
 
-const BlogPost = ({ data }) => {
+const BlogPost = (props) => {
   const {
     title,
     keywordTags,
@@ -18,7 +18,8 @@ const BlogPost = ({ data }) => {
     body,
     publishDate,
     // !! tsk attachedToRecipe,
-  } = data.contentfulBlogPost;
+  } = props.data.contentfulBlogPost;
+  const { next, previous } = props.pageContext;
 
   // ! Add connected recipe
   return (
@@ -31,6 +32,7 @@ const BlogPost = ({ data }) => {
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
+        <pre>{console.log(props.pageContext.next)}</pre>
         <ul className={Styles.tags}>
           {keywordTags.map((tag) => (
             <li>
@@ -81,16 +83,20 @@ const BlogPost = ({ data }) => {
         <nav role="navigation" aria-label="Blog Posts">
           <ul>
             <li>
-              <Link to="/">
-                <AiOutlineArrowLeft />
-                Prev
-              </Link>
+              {previous && (
+                <Link to={`/blog/${previous.node.slug}`}>
+                  <AiOutlineArrowLeft />
+                  Prev
+                </Link>
+              )}
             </li>
             <li>
-              <Link to="/">
-                Next
-                <AiOutlineArrowRight />
-              </Link>
+              {next && (
+                <Link to={`/blog/${next.node.slug}`}>
+                  Next
+                  <AiOutlineArrowRight />
+                </Link>
+              )}
             </li>
           </ul>
         </nav>

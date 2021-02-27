@@ -8,6 +8,12 @@ exports.createPages = ({ graphql, actions }) => {
       query {
         allContentfulBlogPost {
           edges {
+            previous {
+              slug
+            }
+            next {
+              slug
+            }
             node {
               id
               slug
@@ -25,14 +31,17 @@ exports.createPages = ({ graphql, actions }) => {
       const BlogPostTemplate = path.resolve(
         "./src/utils/templates/blogPost.js"
       );
+      const allPosts = res.data.allContentfulBlogPost.edges;
 
-      res.data.allContentfulBlogPost.edges.forEach((edge) => {
+      allPosts.forEach(({ node }, index) => {
         createPage({
-          path: `/blog/${edge.node.slug}`,
+          path: `/blog/${node.slug}`,
           component: BlogPostTemplate,
           context: {
-            slug: edge.node.slug,
-            id: edge.node.id,
+            slug: node.slug,
+            id: node.id,
+            next: index === 0 ? null : allPosts[index - 1],
+            previous: index === res.length - 1 ? null : allPosts[index + 1],
           },
         });
       });
