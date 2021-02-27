@@ -30,7 +30,13 @@ const BlogPost = ({ data }) => {
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
-        {/* // ! tsk Tags */}
+        <ul className={Styles.tags}>
+          {keywordTags.map((tag) => (
+            <li>
+              <Link to="/blog">{tag}</Link>
+            </li>
+          ))}
+        </ul>
         <Img
           fixed={featuredImage.fixed}
           alt={
