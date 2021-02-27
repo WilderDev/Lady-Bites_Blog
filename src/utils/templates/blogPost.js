@@ -39,7 +39,7 @@ const BlogPost = ({ data }) => {
         <main>{body.body}</main>
         <aside className={Styles.author}>
           <StaticImage
-            src="../images/angel.jpg"
+            src="../../images/angel.jpg"
             alt="Headshot of Lauren Wilder"
             placeholder="blurred"
             layout="fixed"

@@ -31,6 +31,22 @@ module.exports = {
     `gatsby-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // Plugins configs
+        plugins: [
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              maxWidth: 800,
+              withWebp: true,
+              loading: "eager",
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-contentful`,
