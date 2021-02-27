@@ -1,12 +1,3 @@
-## TEMP TODO
-
-
-**Design**: https://www.figma.com/file/Hfsn3XaYiJGcTZ8bWp3Gw1/Landing-Page?node-id=0%3A1
-
-**Circle Card Design**: https://codepen.io/blindingstars/pen/vEQORr
-
-**Blog to Help**: https://ibaslogic.com/gatsby-with-contentful-cms/
-
 # Info
 
 1. Brainstorm Ideas
@@ -17,8 +8,8 @@
 # Brand
 
 **Fonts**
-Accent/Headings: Raleway
-Body: Josefin Sans
+Accent/Headings: Raleway (300)
+Body: Josefin Sans (300)
 
 **Colors**
 Primary: #ABEDFF - [#C4F2FF , #b9f2ff , #003d4e]  
@@ -29,9 +20,9 @@ Light: #fdfff5
 Grays: [#999999, #666666, #7a7a7a, #bfbfbf]
 
 **Copywriting**
-Domain:
+Domain: https://ladybites.netlify.app/
 Slogan: What That Mouth Do. . .
-Keywords:
+Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
 **Logo**
 ![Half Eaten Cookie Illustration](src/images/icon/favicon-32x32.png)
@@ -47,9 +38,10 @@ Keywords:
 # Pages
 
 1. Home
-2. Learning (Videos, Courses, Blogs with learning tag)
-3. About (Bio, Contact, Socials, Vision)
-4. Recipes (Mix & Match based on foundations)
+2. Blog (All Articles & Individual Posts)
+3. Learning (Videos, Courses, Blogs with learning tag)
+4. About (Bio, Contact, Socials, Vision)
+5. Recipes (Mix & Match based on foundations)
 
 ---
 
@@ -74,7 +66,7 @@ Keywords:
 8. Accessability
 9. Content Preview [https://www.contentful.com/help/setup-content-preview/?utm_source=webapp&utm_medium=knowledge-base-content_preview&utm_campaign=in-app-help]
 10. \*Test Publish from contentful
-11. Search Functionality
+11. Search Functionality (By tags)
 12. Prev + Next Links
 13. Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
 14. Netlify plugins to test (hashfiles, inline source, subfont)
