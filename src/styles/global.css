@@ -33,6 +33,7 @@ body {
   font-family: var(--ff-prm);
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background: #fbfbfb;
 }
 
 body,

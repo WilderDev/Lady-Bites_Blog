@@ -20,6 +20,7 @@ const BlogPost = ({ data }) => {
     // !! tsk attachedToRecipe,
   } = data.contentfulBlogPost;
 
+  // ! Add connected recipe
   return (
     <AltLayout>
       <SEO
@@ -126,5 +127,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// ! Add connected recipe
