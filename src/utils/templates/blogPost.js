@@ -2,8 +2,6 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { StaticImage } from "gatsby-plugin-image";
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
-import { renderRichText } from "gatsby-source-contentful/rich-text";
 
 import Styles from "../../styles/BlogPost.module.scss";
 import AltLayout from "../../components/altLayout";
@@ -15,30 +13,8 @@ const BlogPost = ({ data }) => {
     keywordTags,
     introduction,
     featuredImage,
-    mainText,
+    body,
   } = data.contentfulBlogPost;
-
-  const Bold = ({ children }) => <span className="bold">{children}</span>;
-  const Text = ({ children }) => <p className="align-center">{children}</p>;
-
-  const options = {
-    renderMark: {
-      [MARKS.BOLD]: (text) => <Bold>{text}</Bold>,
-    },
-    renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-      [BLOCKS.EMBEDDED_ASSET]: (node) => {
-        return (
-          <>
-            <h2>Embedded Asset</h2>
-            <pre>
-              <code>{JSON.stringify(node, null, 2)}</code>
-            </pre>
-          </>
-        );
-      },
-    },
-  };
 
   return (
     <AltLayout>
@@ -60,7 +36,7 @@ const BlogPost = ({ data }) => {
           }
         />
         <hr />
-        <main>{renderRichText(mainText.raw)}</main>
+        <main>{body.body}</main>
         <aside className={Styles.author}>
           <StaticImage
             src="../images/angel.jpg"
@@ -87,9 +63,8 @@ export const pageQuery = graphql`
       publishDate(formatString: "MMMM DD, YYYY")
       slug
       title
-      mainText {
-        raw
-        
+      body {
+        body
       }
       keywordTags
       introduction {
