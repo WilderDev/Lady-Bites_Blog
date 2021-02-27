@@ -271,3 +271,20 @@
     }
   }
 }
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 300px;
+
+    hr {
+      width: 200px;
+    }
+
+    img {
+      max-width: 200px;
+    }
+
+    blockquote {
+      max-width: 200px;
+    }
+  }
+}
