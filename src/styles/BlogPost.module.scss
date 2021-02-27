@@ -271,16 +271,17 @@
     }
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
   .container {
     max-width: 300px;
+    margin: 40px 0;
 
     hr {
-      width: 200px;
+      width: 225px;
     }
 
     img {
-      max-width: 200px;
+      max-width: 225px;
     }
 
     blockquote {
