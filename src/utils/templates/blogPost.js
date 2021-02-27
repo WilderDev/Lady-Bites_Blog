@@ -14,6 +14,8 @@ const BlogPost = ({ data }) => {
     introduction,
     featuredImage,
     body,
+    publishDate,
+    // !! tsk attachedToRecipe,
   } = data.contentfulBlogPost;
 
   return (
@@ -21,12 +23,12 @@ const BlogPost = ({ data }) => {
       <SEO
         title={title}
         author="Lauren Wilder"
-        description={introduction.introduction}
-        // ! keywords
+        description={introduction.childMarkdownRemark.html}
+        // !tsk  keywords
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
-        {/* Tags */}
+        {/* // ! tsk Tags */}
         <Img
           fixed={featuredImage.fixed}
           alt={
@@ -35,18 +37,36 @@ const BlogPost = ({ data }) => {
               : featuredImage.title
           }
         />
+        <small>{publishDate}</small>
         <hr />
-        <main>{body.body}</main>
+        <main>
+          <div
+            className={Styles.introduction}
+            dangerouslySetInnerHTML={{
+              __html: introduction.childMarkdownRemark.html,
+            }}
+          ></div>
+          <hr />
+          <div
+            className={Styles.mainText}
+            dangerouslySetInnerHTML={{
+              __html: body.childMarkdownRemark.html,
+            }}
+          ></div>
+          <hr />
+        </main>
         <aside className={Styles.author}>
+          <Link to="/about">
+            <h5>Lauren Wagner</h5>
+          </Link>
           <StaticImage
             src="../../images/angel.jpg"
             alt="Headshot of Lauren Wilder"
             placeholder="blurred"
             layout="fixed"
-            width={100}
-            height={100}
+            width={75}
+            height={75}
           />
-          <h5>Lauren Wagner</h5>
           <p>Professional Pasty Chef & Happy Goofball</p>
         </aside>
       </article>
@@ -64,14 +84,18 @@ export const pageQuery = graphql`
       slug
       title
       body {
-        body
+        childMarkdownRemark {
+          html
+        }
       }
       keywordTags
       introduction {
-        introduction
+        childMarkdownRemark {
+          html
+        }
       }
       featuredImage {
-        fixed(width: 800, height: 300) {
+        fixed(width: 700, height: 250) {
           ...GatsbyContentfulFixed_tracedSVG
         }
       }
