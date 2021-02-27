@@ -6,6 +6,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import Styles from "../../styles/BlogPost.module.scss";
 import AltLayout from "../../components/altLayout";
 import SEO from "../../components/seo";
+import { AiOutlineArrowRight } from "@react-icons/all-files/ai/AiOutlineArrowRight";
+import { AiOutlineArrowLeft } from "@react-icons/all-files/ai/AiOutlineArrowLeft";
 
 const BlogPost = ({ data }) => {
   const {
@@ -57,7 +59,7 @@ const BlogPost = ({ data }) => {
         </main>
         <aside className={Styles.author}>
           <Link to="/about">
-            <h5>Lauren Wagner</h5>
+            <h5>Lauren Wilder</h5>
           </Link>
           <StaticImage
             src="../../images/angel.jpg"
@@ -69,6 +71,22 @@ const BlogPost = ({ data }) => {
           />
           <p>Professional Pasty Chef & Happy Goofball</p>
         </aside>
+        <nav role="navigation" aria-label="Blog Posts">
+          <ul>
+            <li>
+              <Link to="/">
+                <AiOutlineArrowLeft />
+                Prev
+              </Link>
+            </li>
+            <li>
+              <Link to="/">
+                Next
+                <AiOutlineArrowRight />
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </article>
     </AltLayout>
   );
