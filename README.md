@@ -70,5 +70,4 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 13. 404 Page
 14. Lady Bug eating the page
 15. Search Functionality (By tags)
-16. Netlify plugins to test (hashfiles, inline source, subfont)
-17. Internationalization
+16. Internationalization
