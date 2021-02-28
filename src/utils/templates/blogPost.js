@@ -78,7 +78,9 @@ const BlogPost = (props) => {
             width={75}
             height={75}
           />
-          <p>Professional Pasty Chef & Happy Goofball</p>
+          <p>
+            <i>Professional Pasty Chef & Happy Goofball</i>
+          </p>
         </aside>
         <nav role="navigation" aria-label="Blog Posts">
           <ul>

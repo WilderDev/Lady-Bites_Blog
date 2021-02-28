@@ -33,12 +33,34 @@
     letter-spacing: 1.05px;
     padding: 5px;
 
-    // !tsk h2 {}
-    // h3 {}
-    // h4 {}
-    // p {}
-    // b {}
-    // i {}
+    h2 {
+      font-size: 1.7rem;
+      color: #111;
+      padding: 25px 0 3px 0;
+    }
+    h3 {
+      font-size: 1.3rem;
+      padding: 20px 0 3px 0;
+    }
+
+    hr {
+      width: 50%;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+      );
+      margin-bottom: 25px;
+      margin-top: 25px;
+
+      &::before {
+        display: none;
+      }
+    }
+
     blockquote {
       font-family: Georgia, serif;
       font-size: 18px;
@@ -93,8 +115,9 @@
     }
 
     p {
-      padding-top: 6px;
-      font-size: 1rem;
+      padding-top: 8px;
+      font-size: 0.95rem;
+      color: #666;
     }
 
     img {
