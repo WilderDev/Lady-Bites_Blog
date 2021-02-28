@@ -53,14 +53,22 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 11. Animations & Page Transitions
 12. Tags & Search Functionality
 
-# Extra
+# Todo List
 
-1.  Lady Bug eating the page
-2.  Animations / Loaders
-3.  Page Transitions
-4.  Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
-5.  AMP (Netlify plugin & gatsby plugin)
-6.  Web Push
-7.  Search Functionality (By tags)
-8.  Netlify plugins to test (hashfiles, inline source, subfont)
-9.  Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
+1.  Attached Recipe Styles
+2.  Recipe Page
+3.  About Page
+4.  Learning Page
+5.  Animations / Loaders
+6.  Page Transitions
+7.  RSS
+8.  Home Page
+9.  Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
+10. AMP (Netlify plugin & gatsby plugin)
+11. Web Push
+12. Social Sharing
+13. 404 Page
+14. Lady Bug eating the page
+15. Search Functionality (By tags)
+16. Netlify plugins to test (hashfiles, inline source, subfont)
+17. Internationalization

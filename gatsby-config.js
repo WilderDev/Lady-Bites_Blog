@@ -175,6 +175,21 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.ladybites.netlify.app",
+        sitemap: "https://www.ladybites.netlify.app/sitemap.xml",
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 };
