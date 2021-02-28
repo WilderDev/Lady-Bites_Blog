@@ -191,14 +191,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: "gatsby-plugin-html2amp",
-      options: {
-        files: ["blog/*.html"],
-        publicPath: "/",
-        dist: "/amp",
-        optimize: true,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-html2amp",
+    //   options: {
+    //     files: ["blog/*.html"],
+    //     publicPath: "/",
+    //     dist: "/amp",
+    //     optimize: true,
+    //   },
+    // },
   ],
 };
