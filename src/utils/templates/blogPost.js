@@ -28,7 +28,8 @@ const BlogPost = (props) => {
         title={title}
         author="Lauren Wilder"
         description={introduction.childMarkdownRemark.html}
-        // !tsk  keywords
+        isArticle={true}
+        keywords={keywordTags}
       />
       <article className={Styles.container}>
         <h1>{title}</h1>

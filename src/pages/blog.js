@@ -13,8 +13,14 @@ const Blog = ({ data }) => {
     <AltLayout>
       <SEO
         title="Blog"
-        // description
-        //  keywords
+        description={"Lady Bites Blog All Posts: Lady Bites Blog"}
+        isArticle={false}
+        keywords={[
+          "Lady Bites Blog",
+          "All Articles Lady Bites Blog",
+          "All Lady Bites Blog Posts",
+        ]}
+        // ! TSK image
       />
       ;
       <section className={Styles.container}>

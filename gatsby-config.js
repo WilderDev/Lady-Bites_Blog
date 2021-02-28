@@ -11,6 +11,14 @@ module.exports = {
     image: "./cookie-logo.png", // path to image in static folder
     author: `Lauren Wilder`, // tsk: ask for her twitter handle,
     siteUrl: `https://ladybites.netlify.app/`,
+    image: `./images/cookie-logo.png`,
+    keywords: [
+      "Profession Pastry Chef",
+      "Food Blog",
+      "Lauren Lady Bites Blog",
+      "Pastry Blog",
+      "Cooking Blog",
+    ],
     socials: {
       instagram: `tsk`,
       pintrest: `tsk`,

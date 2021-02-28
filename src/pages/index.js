@@ -9,7 +9,11 @@ import { AiFillUpCircle } from "@react-icons/all-files/ai/AiFillUpCircle";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title="Home"
+      description={"Lady Bites Home Landing Page: Lady Bites Blog"}
+      isArticle={false}
+    />
     <header className={Styles.container} id="Top">
       <StaticImage
         src="../images/coffee-bg-main-2.jpg"
