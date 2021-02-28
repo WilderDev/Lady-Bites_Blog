@@ -1,10 +1,3 @@
-# Info
-
-1. Brainstorm Ideas
-2. Domain Name?
-3. Keywords: [https://moz.com/beginners-guide-to-seo/keyword-research]
-4. Design [https://www.gatsbyjs.com/plugins/gatsby-plugin-readingtime-contentful/]
-
 # Brand
 
 **Fonts**
@@ -21,7 +14,7 @@ Grays: [#999999, #666666, #7a7a7a, #bfbfbf]
 
 **Copywriting**
 Domain: https://ladybites.netlify.app/
-Slogan: What That Mouth Do. . .
+Slogan: Happy Belly, Whole Heart
 Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
 **Logo**
@@ -47,25 +40,27 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
 # Features
 
-1. Contenful (Schema: Blog Post, Recipe) (Title, Subtitle, Date, Slug, Intro, Featured Image, recipe, Body, Summary, allow comments?, tags, Keywords?) (Body: Lots of images, resources, internal links to your blog posts)
-2. Netlify
-3. Bakers Percentage
-4. RSS
-5. Social Sharing
-6. Video Embed
+1. Contenful Headless-CMS (Blog Posts & Recipes)
+2. Netlify Static Hosting
+3. RSS
+4. Perfect SEO Score
+5. Google Amp Pages
+6. Web Push Notifications
+7. Bakers Percentage Tool
+8. Social Sharing
+9. Video Embed
+10. Previous & Next Links
+11. Animations & Page Transitions
+12. Tags & Search Functionality
 
 # Extra
 
-1.  Prev + Next Links
-2.  SEO [https://github.com/WilderDev/gatsby-blog-workflow-template/blob/main/src/utils/helpers/SEO.js]
-3.  Lady Bug eating the page
-4.  Animations / Loaders
-5.  Page Transitions
-6.  Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
-7.  AMP (Netlify plugin & gatsby plugin)
-8.  Web Push
-9.  Content Preview [https://www.contentful.com/help/setup-content-preview/?utm_source=webapp&utm_medium=knowledge-base-content_preview&utm_campaign=in-app-help]
-10. \*Test Publish from contentful
-11. Search Functionality (By tags)
-12. Netlify plugins to test (hashfiles, inline source, subfont)
-13. Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
+1.  Lady Bug eating the page
+2.  Animations / Loaders
+3.  Page Transitions
+4.  Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
+5.  AMP (Netlify plugin & gatsby plugin)
+6.  Web Push
+7.  Search Functionality (By tags)
+8.  Netlify plugins to test (hashfiles, inline source, subfont)
+9.  Robots.txt (https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/?=Robots.txt)
