@@ -1,4 +1,12 @@
 .container {
   text-align: center;
   background: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  small {
+    padding: 0 20px;
+  }
 }

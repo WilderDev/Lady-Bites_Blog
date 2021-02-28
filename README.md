@@ -65,7 +65,6 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 8.  Home Page
 9.  Social Sharing
 10. 404 Page
-11. Lady Bug eating the page
 
 ## Far Future Possibilities
 
