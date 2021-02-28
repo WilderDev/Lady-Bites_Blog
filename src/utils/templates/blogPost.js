@@ -33,7 +33,6 @@ const BlogPost = (props) => {
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
-        <pre>{console.log(props.pageContext.next)}</pre>
         <ul className={Styles.tags}>
           {keywordTags.map((tag) => (
             <li>

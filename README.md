@@ -70,4 +70,5 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 13. 404 Page
 14. Lady Bug eating the page
 15. Search Functionality (By tags)
-16. Internationalization
+16. https://search.google.com/u/1/search-console/welcome
+17. Internationalization
