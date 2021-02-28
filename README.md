@@ -63,12 +63,12 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 6.  Page Transitions
 7.  RSS
 8.  Home Page
-9.  Purge CSS [https://www.gatsbyjs.com/plugins/gatsby-plugin-purgecss/]
-10. AMP (Netlify plugin & gatsby plugin)
-11. Web Push
-12. Social Sharing
-13. 404 Page
-14. Lady Bug eating the page
-15. Search Functionality (By tags)
-16. https://search.google.com/u/1/search-console/welcome
-17. Internationalization
+9.  Social Sharing
+10. 404 Page
+11. Lady Bug eating the page
+
+## Far Future Possibilities
+
+1. Internationalization
+2. Search Functionality (By tags)
+3. Web Push
