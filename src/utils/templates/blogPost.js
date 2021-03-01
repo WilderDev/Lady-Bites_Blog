@@ -17,11 +17,11 @@ const BlogPost = (props) => {
     featuredImage,
     body,
     publishDate,
-    // !! tsk attachedToRecipe,
+    attachedToRecipe,
+    connectedRecipe,
   } = props.data.contentfulBlogPost;
   const { next, previous } = props.pageContext;
 
-  // ! Add connected recipe
   return (
     <AltLayout>
       <SEO
@@ -51,6 +51,14 @@ const BlogPost = (props) => {
           />
         </div>
         <small>{publishDate}</small>
+        {attachedToRecipe && (
+          <Link
+            className={Styles.recLink}
+            to={`/recipe/${connectedRecipe.slug}`}
+          >
+            View the {connectedRecipe.title} Full Recipe!
+          </Link>
+        )}
         <hr />
         <main>
           <div
@@ -66,6 +74,15 @@ const BlogPost = (props) => {
               __html: body.childMarkdownRemark.html,
             }}
           ></div>
+          <hr />
+          {attachedToRecipe && (
+            <Link
+              className={Styles.recLink}
+              to={`/recipe/${connectedRecipe.slug}`}
+            >
+              View the {connectedRecipe.title} Full Recipe!
+            </Link>
+          )}
           <hr />
         </main>
         <aside className={Styles.author}>
@@ -115,6 +132,10 @@ export const pageQuery = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       attachedToRecipe
+      connectedRecipe {
+        title
+        slug
+      }
       publishDate(formatString: "MMMM DD, YYYY")
       slug
       title

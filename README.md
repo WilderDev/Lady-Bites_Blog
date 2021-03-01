@@ -55,16 +55,14 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
 # Todo List
 
-1.  Recipe Page
-2.  Attached Recipe Styles / attached to blog styles
-3.  About Page
-4.  Learning Page
-5.  Animations / Loaders
-6.  Page Transitions
-7.  RSS
-8.  Home Page
-9.  Social Sharing
-10. 404 Page
+1.  About Page
+2.  Learning Page
+3.  Animations / Loaders
+4.  Page Transitions
+5.  RSS
+6.  Home Page
+7.  Social Sharing
+8.  404 Page
 
 ## Far Future Possibilities
 

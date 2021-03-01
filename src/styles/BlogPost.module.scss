@@ -228,6 +228,22 @@
       }
     }
   }
+
+  .recLink {
+    text-decoration: none;
+    color: #003d4e;
+    text-transform: uppercase;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    transition: all 300ms ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      color: #abedff;
+      font-weight: normal;
+    }
+  }
 }
 
 // !! Media Queries

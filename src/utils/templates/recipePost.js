@@ -24,7 +24,6 @@ const RecipePost = (props) => {
   } = props.data.contentfulRecipe;
   const { next, previous } = props.pageContext;
 
-  // ! Add connected blog post
   return (
     <AltLayout>
       <SEO
