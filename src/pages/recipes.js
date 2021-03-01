@@ -26,7 +26,7 @@ const Recipes = ({ data }) => {
       <section className={Styles.container}>
         <h1>Recipes Page</h1>
         <section className={Styles.allRecipeContainer}>
-          <h2>({allRecipes.totalCount} Posts)</h2>
+          <h2>({allRecipes.totalCount} Recipes)</h2>
           <hr />
           <section className={Styles.allArticles}>
             {allRecipes.edges.map(({ node: recipe }) => (
