@@ -40,14 +40,16 @@ const BlogPost = (props) => {
             </li>
           ))}
         </ul>
-        <Img
-          fixed={featuredImage.fixed}
-          alt={
-            featuredImage.description
-              ? featuredImage.description
-              : featuredImage.title
-          }
-        />
+        <div className={Styles.heroImg}>
+          <Img
+            fluid={featuredImage.fluid}
+            alt={
+              featuredImage.description
+                ? featuredImage.description
+                : featuredImage.title
+            }
+          />
+        </div>
         <small>{publishDate}</small>
         <hr />
         <main>
@@ -128,8 +130,8 @@ export const pageQuery = graphql`
         }
       }
       featuredImage {
-        fixed(width: 700, height: 250) {
-          ...GatsbyContentfulFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyContentfulFluid_tracedSVG
         }
       }
     }
