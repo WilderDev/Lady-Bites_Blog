@@ -10,7 +10,7 @@
     display: block;
   }
 
-  img {
+  main img {
     border-radius: 30px;
     border: 1px solid #222;
   }
@@ -121,7 +121,7 @@
     }
 
     img {
-      border-radius: 50%;
+      border-radius: 50% !important;
       padding: 1px;
     }
   }
@@ -227,7 +227,7 @@
       width: 600px;
     }
 
-    img {
+    main img {
       max-width: 600px;
     }
   }
@@ -240,7 +240,7 @@
       width: 300px;
     }
 
-    img {
+    main img {
       max-width: 300px;
     }
   }
@@ -258,7 +258,7 @@
       width: 275px;
     }
 
-    img {
+    main img {
       max-width: 275px;
       width: 275px;
     }
@@ -305,23 +305,12 @@
       width: 225px;
     }
 
-    img {
+    main img {
       max-width: 225px;
     }
 
     blockquote {
       max-width: 200px;
     }
-  }
-}
-
-@media (max-width: 600px) and (orientation: portrait) {
-  .container main img {
-    max-width: 300px;
-  }
-}
-@media (max-width: 400px) and (orientation: portrait) {
-  .container main img {
-    max-width: 225px;
   }
 }

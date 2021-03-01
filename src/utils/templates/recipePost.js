@@ -68,12 +68,11 @@ const RecipePost = (props) => {
             </article>
             <article>
               <h3>Nutrition</h3>
-              <div
-                className={Styles.nutrition}
-                dangerouslySetInnerHTML={{
-                  __html: nutritionInfo,
-                }}
-              ></div>
+              <ul className={Styles.nutrition}>
+                {nutritionInfo.map((inf) => (
+                  <li>{inf}</li>
+                ))}
+              </ul>
             </article>
           </section>
           <hr />
