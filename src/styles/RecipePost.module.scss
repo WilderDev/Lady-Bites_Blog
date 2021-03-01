@@ -1,0 +1,326 @@
+.container {
+  max-width: 900px;
+  padding: 50px;
+  text-align: center;
+  margin: 50px auto;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+  small {
+    display: block;
+  }
+
+  img {
+    border-radius: 30px;
+    border: 1px solid #222;
+  }
+
+  hr {
+    margin: 30px auto 10px auto;
+    width: 800px;
+  }
+
+  main hr {
+    margin-top: 30px;
+  }
+
+  section.topInfo {
+    display: flex !important;
+    justify-content: space-around;
+  }
+
+  .nutrition,
+  .ingredients {
+    width: 100%;
+  }
+
+  .nutrition,
+  .ingredients,
+  .mainText {
+    margin: 0 auto;
+    max-width: 70ch;
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: 1.05px;
+    padding: 5px;
+
+    h2 {
+      font-size: 1.7rem;
+      color: #111;
+      padding: 25px 0 3px 0;
+    }
+    h3 {
+      font-size: 1.3rem;
+      padding: 20px 0 3px 0;
+    }
+
+    hr {
+      width: 50%;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+      );
+      margin-bottom: 25px;
+      margin-top: 25px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    blockquote {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+      width: 500px;
+      margin: 20px 0;
+      padding: 0.35em 40px;
+      line-height: 1.45;
+      position: relative;
+      color: #383838;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      display: block;
+      padding-left: 10px;
+      font-size: 80px;
+      position: absolute;
+      left: -20px;
+      top: -20px;
+      color: #abedff;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      display: block;
+      padding-right: 10px;
+      font-size: 80px;
+      position: absolute;
+      right: 50px;
+      bottom: -60px;
+      color: #abedff;
+    }
+  }
+
+  aside.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    a {
+      text-decoration: none;
+    }
+    h5 {
+      font-size: 1.45rem;
+      transition: all 400ms ease;
+
+      &:hover,
+      &:focus {
+        color: #abedff;
+      }
+    }
+
+    p {
+      padding-top: 8px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    img {
+      border-radius: 50%;
+      padding: 1px;
+    }
+  }
+
+  .tags {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px;
+
+    li {
+      float: left;
+    }
+
+    a {
+      background: #eee;
+      border-radius: 3px 0 0 3px;
+      color: #999;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 20px 0 23px;
+      position: relative;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      -webkit-transition: color 0.2s;
+    }
+
+    a::before {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+      content: "";
+      height: 6px;
+      left: 10px;
+      position: absolute;
+      width: 6px;
+      top: 10px;
+    }
+
+    a::after {
+      background: #fff;
+      border-bottom: 13px solid transparent;
+      border-left: 10px solid #eee;
+      border-top: 13px solid transparent;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    a:hover {
+      background-color: #003d4e;
+      color: #fbfbfb;
+    }
+
+    a:hover::after {
+      border-left-color: #003d4c;
+    }
+  }
+
+  nav {
+    width: 100%;
+    margin-bottom: -15px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li a {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        text-decoration: none;
+        color: #003d4e;
+        transition: all 350ms ease;
+
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+          color: #010203;
+        }
+      }
+    }
+  }
+}
+
+// !! Media Queries
+@media screen and (max-width: 1025px) {
+  .container {
+    max-width: 800px;
+
+    hr {
+      width: 700px;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+
+    hr {
+      width: 600px;
+    }
+
+    img {
+      max-width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 400px;
+
+    hr {
+      width: 300px;
+    }
+
+    img {
+      max-width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .container {
+    max-width: 325px;
+    padding: 25px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    hr {
+      width: 275px;
+    }
+
+    img {
+      max-width: 275px;
+    }
+
+    .introduction,
+    .mainText {
+      max-width: 95%;
+    }
+
+    blockquote {
+      max-width: 275px;
+
+      &:after {
+        content: "" !important;
+        display: none;
+      }
+    }
+
+    .tags {
+      padding: 10px;
+
+      a {
+        padding: 0 30px 0 33px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+
+        &::after {
+          border-bottom: 26px solid transparent;
+          border-left: 20px solid #eee;
+          border-top: 26px solid transparent;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 321px) {
+  .container {
+    // max-width: 300px;
+    // margin: 40px 0;
+    padding: 10px;
+
+    hr {
+      width: 200px;
+    }
+
+    img {
+      max-width: 200px;
+    }
+
+    blockquote {
+      max-width: 200px;
+    }
+  }
+}

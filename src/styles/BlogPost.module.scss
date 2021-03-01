@@ -296,8 +296,9 @@
 }
 @media screen and (max-width: 321px) {
   .container {
-    max-width: 300px;
-    margin: 40px 0;
+    // max-width: 300px;
+    // margin: 40px 0
+    padding: 10px;
 
     hr {
       width: 225px;

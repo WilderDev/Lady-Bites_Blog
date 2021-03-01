@@ -13,8 +13,14 @@ const RecipePost = (props) => {
   const {
     title,
     keywordTags,
+    dietaryTags,
     mainImage,
     publishDate,
+    ingredients,
+    instructions,
+    feedsAmount,
+    nutritionInfo,
+    totalTime,
   } = props.data.contentfulRecipe;
   const { next, previous } = props.pageContext;
 
@@ -30,10 +36,17 @@ const RecipePost = (props) => {
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
+        <small>Feeds: {feedsAmount}</small>
+        <small>Time to Make: {totalTime} min</small>
         <ul className={Styles.tags}>
           {keywordTags.map((tag) => (
             <li>
-              <Link to="/recipe">{tag}</Link>
+              <Link to="/recipes">{tag}</Link>
+            </li>
+          ))}
+          {dietaryTags.map((tag) => (
+            <li>
+              <Link to="/recipes">{tag}</Link>
             </li>
           ))}
         </ul>
@@ -44,19 +57,32 @@ const RecipePost = (props) => {
         <small>{publishDate}</small>
         <hr />
         <main>
-          {/* <div
-            className={Styles.introduction}
-            dangerouslySetInnerHTML={{
-              __html: introduction.childMarkdownRemark.html,
-            }}
-          ></div> */}
+          <section className={Styles.topInfo}>
+            <article>
+              <h3>Ingredients</h3>
+              <ul className={Styles.ingredients}>
+                {ingredients.map((ing) => (
+                  <li>{ing}</li>
+                ))}
+              </ul>
+            </article>
+            <article>
+              <h3>Nutrition</h3>
+              <div
+                className={Styles.nutrition}
+                dangerouslySetInnerHTML={{
+                  __html: nutritionInfo,
+                }}
+              ></div>
+            </article>
+          </section>
           <hr />
-          {/* <div
+          <div
             className={Styles.mainText}
             dangerouslySetInnerHTML={{
-              __html: body.childMarkdownRemark.html,
+              __html: instructions.internal.content,
             }}
-          ></div> */}
+          ></div>
           <hr />
         </main>
         <aside className={Styles.author}>
@@ -109,6 +135,16 @@ export const pageQuery = graphql`
       publishDate(formatString: "MMMM DD, YYYY")
       slug
       title
+      totalTime
+      feedsAmount
+      ingredients
+      instructions {
+        internal {
+          content
+        }
+      }
+      nutritionInfo
+      dietaryTags
       keywordTags
       mainImage {
         fixed(width: 700, height: 250) {
