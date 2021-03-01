@@ -8,6 +8,17 @@
 
   small {
     display: block;
+    font-size: 0.95rem;
+  }
+
+  .heading {
+    font-size: 1.7rem;
+    text-decoration: underline #abedff;
+  }
+
+  .headingB {
+    font-size: 2.05rem;
+    text-decoration: underline double #abedff;
   }
 
   .heroImg {
@@ -40,84 +51,28 @@
   section.topInfo {
     display: flex !important;
     justify-content: space-around;
+
+    ul {
+      padding-left: 24px;
+      li {
+        list-style-type: disc;
+      }
+    }
   }
 
-  .nutrition,
-  .ingredients {
-    width: 100%;
-  }
-
-  .nutrition,
-  .ingredients,
-  .mainText {
+  main .nutrition,
+  main .ingredients,
+  main .mainText {
     margin: 0 auto;
     max-width: 70ch;
     text-align: left;
     line-height: 1.6;
     letter-spacing: 1.05px;
     padding: 5px;
+  }
 
-    h2 {
-      font-size: 1.7rem;
-      color: #111;
-      padding: 25px 0 3px 0;
-    }
-    h3 {
-      font-size: 1.3rem;
-      padding: 20px 0 3px 0;
-    }
-
-    hr {
-      width: 50%;
-      border: 0;
-      height: 1px;
-      background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0)
-      );
-      margin-bottom: 25px;
-      margin-top: 25px;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    blockquote {
-      font-family: Georgia, serif;
-      font-size: 18px;
-      font-style: italic;
-      width: 500px;
-      margin: 20px 0;
-      padding: 0.35em 40px;
-      line-height: 1.45;
-      position: relative;
-      color: #383838;
-    }
-
-    blockquote:before {
-      content: "\201C";
-      display: block;
-      padding-left: 10px;
-      font-size: 80px;
-      position: absolute;
-      left: -20px;
-      top: -20px;
-      color: #abedff;
-    }
-
-    blockquote:after {
-      content: "\201D";
-      display: block;
-      padding-right: 10px;
-      font-size: 80px;
-      position: absolute;
-      right: 50px;
-      bottom: -60px;
-      color: #abedff;
-    }
+  .mainText li {
+    padding: 5px 0;
   }
 
   aside.author {
@@ -127,6 +82,7 @@
     padding: 20px;
     a {
       text-decoration: none;
+      z-index: 999;
     }
     h5 {
       font-size: 1.45rem;
@@ -259,6 +215,11 @@
 @media screen and (max-width: 600px) {
   .container {
     max-width: 400px;
+
+    section.topInfo {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
 
     hr {
       width: 300px;

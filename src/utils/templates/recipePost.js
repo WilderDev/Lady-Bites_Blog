@@ -36,8 +36,12 @@ const RecipePost = (props) => {
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
-        <small>Feeds: {feedsAmount}</small>
-        <small>Time to Make: {totalTime} min</small>
+        <small>
+          <b>Feeds:</b> {feedsAmount} people
+        </small>
+        <small>
+          <b>Time to Make:</b> {totalTime} min
+        </small>
         <ul className={Styles.tags}>
           {keywordTags.map((tag) => (
             <li>
@@ -58,12 +62,14 @@ const RecipePost = (props) => {
             }
           />
         </div>
-        <small>{publishDate}</small>
+        <small>
+          <b>Published:</b> {publishDate}
+        </small>
         <hr />
         <main>
           <section className={Styles.topInfo}>
             <article>
-              <h3>Ingredients</h3>
+              <h3 className={Styles.heading}>Ingredients</h3>
               <ul className={Styles.ingredients}>
                 {ingredients.map((ing) => (
                   <li>{ing}</li>
@@ -71,7 +77,7 @@ const RecipePost = (props) => {
               </ul>
             </article>
             <article>
-              <h3>Nutrition</h3>
+              <h3 className={Styles.heading}>Nutrition</h3>
               <ul className={Styles.nutrition}>
                 {nutritionInfo.map((inf) => (
                   <li>{inf}</li>
@@ -80,12 +86,14 @@ const RecipePost = (props) => {
             </article>
           </section>
           <hr />
-          <div
-            className={Styles.mainText}
-            dangerouslySetInnerHTML={{
-              __html: instructions.internal.content,
-            }}
-          ></div>
+          <h2 className={Styles.headingB}>Instructions</h2>
+          <ul className={Styles.mainText}>
+            {instructions.map((ins, index) => (
+              <li>
+                <b> Step {index + 1}:</b> {ins}
+              </li>
+            ))}
+          </ul>
           <hr />
         </main>
         <aside className={Styles.author}>
@@ -141,11 +149,7 @@ export const pageQuery = graphql`
       totalTime
       feedsAmount
       ingredients
-      instructions {
-        internal {
-          content
-        }
-      }
+      instructions
       nutritionInfo
       dietaryTags
       keywordTags
