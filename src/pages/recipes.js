@@ -31,7 +31,7 @@ const Recipes = ({ data }) => {
           <section className={Styles.allArticles}>
             {allRecipes.edges.map(({ node: recipe }) => (
               <article key={recipe.id}>
-                <Link to={`/blog/${recipe.slug}`}>
+                <Link to={`/recipe/${recipe.slug}`}>
                   <Img
                     fixed={recipe.mainImage.fixed}
                     alt={recipe.mainImage.description}
@@ -63,7 +63,7 @@ export const AllRecipes = graphql`
         node {
           id
           title
-          # slug
+          slug
           totalTime
           publishDate(formatString: "MMMM DD, YYYY")
           keywordTags
