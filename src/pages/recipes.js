@@ -37,9 +37,17 @@ const Recipes = ({ data }) => {
                     alt={recipe.mainImage.description}
                   />
                   <small>
-                    Published: <strong>{recipe.publishDate}</strong>
+                    <ul>
+                      {recipe.dietaryTags.map((tag) => (
+                        <li>{tag}</li>
+                      ))}
+                    </ul>
                   </small>
                   <h3>{recipe.title}</h3>
+                  <div className={Styles.lowTags}>
+                    <small>Feeds: {recipe.feedsAmount}</small>
+                    <small>Time: {recipe.totalTime}m</small>
+                  </div>
                 </Link>
               </article>
             ))}
@@ -66,11 +74,14 @@ export const AllRecipes = graphql`
           slug
           totalTime
           publishDate(formatString: "MMMM DD, YYYY")
+          dietaryTags
+          feedsAmount
+          totalTime
           keywordTags
           mainImage {
             title
             description
-            fixed(height: 150, width: 300) {
+            fixed(height: 175, width: 325) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
