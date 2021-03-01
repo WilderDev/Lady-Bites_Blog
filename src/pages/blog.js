@@ -20,7 +20,6 @@ const Blog = ({ data }) => {
           "All Articles Lady Bites Blog",
           "All Lady Bites Blog Posts",
         ]}
-        // ! TSK image
       />
       ;
       <section className={Styles.container}>
