@@ -18,6 +18,13 @@
     height: 250px;
     width: 700px;
 
+    & > * {
+      width: 700px;
+      max-width: 700px;
+      height: 250px;
+      max-height: 250px;
+    }
+
     img {
       max-height: 250px;
       height: 250px;
