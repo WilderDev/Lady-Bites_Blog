@@ -10,9 +10,17 @@
     display: block;
   }
 
-  main img {
-    border-radius: 30px;
-    border: 1px solid #222;
+  .heroImg {
+    margin: 0 auto;
+    max-width: 700px;
+    max-height: 250px;
+    margin-bottom: 7px;
+
+    img {
+      max-height: 250px;
+      border-radius: 30px;
+      border: 1px solid #222;
+    }
   }
 
   hr {
@@ -238,7 +246,7 @@
       width: 600px;
     }
 
-    main img {
+    .heroImg img {
       max-width: 600px;
     }
   }
@@ -251,7 +259,7 @@
       width: 300px;
     }
 
-    main img {
+    .heroImg img {
       max-width: 300px;
     }
   }
@@ -269,7 +277,7 @@
       width: 275px;
     }
 
-    main img {
+    .heroImg img {
       max-width: 275px;
     }
 
@@ -307,6 +315,9 @@
 }
 @media screen and (max-width: 321px) {
   .container {
+    .tags {
+      display: none;
+    }
     // max-width: 300px;
     // margin: 40px 0;
     padding: 10px;
@@ -315,7 +326,7 @@
       width: 200px;
     }
 
-    main img {
+    .heroImg img {
       max-width: 200px;
     }
 

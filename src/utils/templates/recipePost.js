@@ -50,10 +50,14 @@ const RecipePost = (props) => {
             </li>
           ))}
         </ul>
-        <Img
-          fixed={mainImage.fixed}
-          alt={mainImage.description ? mainImage.description : mainImage.title}
-        />
+        <div className={Styles.heroImg}>
+          <Img
+            fluid={mainImage.fluid}
+            alt={
+              mainImage.description ? mainImage.description : mainImage.title
+            }
+          />
+        </div>
         <small>{publishDate}</small>
         <hr />
         <main>
@@ -146,8 +150,8 @@ export const pageQuery = graphql`
       dietaryTags
       keywordTags
       mainImage {
-        fixed(width: 700, height: 250) {
-          ...GatsbyContentfulFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyContentfulFluid_tracedSVG
         }
       }
     }
