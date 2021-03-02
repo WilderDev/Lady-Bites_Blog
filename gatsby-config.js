@@ -8,8 +8,8 @@ module.exports = {
     shortTitle: `Lady Bites`,
     titleTemplate: "%s · Lady Bites Blog",
     description: `Blog website for Lady-Bites Brand - Recipes, Videos & Blogs`,
-    image: "./cookie-logo.png", // path to image in static folder
-    author: `Lauren Wilder`, // tsk: ask for her twitter handle,
+    image: "./cookie-logo.png",
+    author: `Lauren Wilder`,
     siteUrl: `https://ladybites.netlify.app/`,
     image: `./images/cookie-logo.png`,
     keywords: [
@@ -20,8 +20,8 @@ module.exports = {
       "Cooking Blog",
     ],
     socials: {
-      instagram: `tsk`,
-      pintrest: `tsk`,
+      instagram: ``, // tsk todo
+      pintrest: ``, // tsk todo
       twitter: `@LaurenLadyBites`,
     },
   },
@@ -79,63 +79,71 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-feed`,
-    //   options: {
-    //     query: `
-    //       {
-    //         site {
-    //           siteMetadata {
-    //             title
-    //             description
-    //             author
-    //             managingEditor: author
-    //             siteUrl
-    //             site_url: siteUrl
-    //             image: image
-    //             image_url: image
-    //           }
-    //         }
-    //       }
-    //     `,
-    //     feeds: [
-    //       {
-    //         serialize: ({ query: { site, allContentfulBlogPost } }) => {
-    //           return allContentfulBlogPost.edges.map(({ node: post }) => {
-    //             return {
-    //               title: post.title,
-    //               description: post.subTitle,
-    //               date: post.publishDate,
-    //               url: `${site.siteMetadata.siteUrl}/blog/${post.slug}`,
-    //               guid: `${site.siteMetadata.siteUrl}/blog/${post.slug}`,
-    //               custom_elements: [{ "content:encoded": post.body.body }],
-    //             };
-    //           });
-    //         },
-    //         query: `
-    //           {
-    //              allContentfulBlogPost(sort: {fields: publishDate, order: ASC}) {
-    //                edges {
-    //                 node {
-    //                   slug
-    //                   title
-    //                   subTitle
-    //                   publishDate(formatString: "MMMM DD, YYYY")
-    //                   body {
-    //                     body
-    //                   }
-    //                 }
-    //               }
-    //             }
-    //           }
-    //         `,
-    //         output: "/rss.xml",
-    //         title: "Lady Bites Blog - RSS",
-    //         match: "^/blog/",
-    //       },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                author
+                managingEditor: author
+                siteUrl
+                site_url: siteUrl
+                image: image
+                image_url: image
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allContentfulBlogPost } }) => {
+              return allContentfulBlogPost.edges.map(({ node: post }) => {
+                return {
+                  title: post.title,
+                  description: post.introduction.childMarkdownRemark.html,
+                  date: post.publishDate,
+                  url: `${site.siteMetadata.siteUrl}/blog/${post.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/blog/${post.slug}`,
+                  custom_elements: [
+                    { "content:encoded": post.body.childMarkdownRemark.html },
+                  ],
+                };
+              });
+            },
+            query: `
+              {
+                 allContentfulBlogPost(sort: {fields: publishDate, order: ASC}) {
+                   edges {
+                    node {
+                      slug
+                      title
+                      introduction {
+                        childMarkdownRemark {
+                          html
+                        }
+                      }
+                      publishDate(formatString: "MMMM DD, YYYY")
+                      body {
+                        childMarkdownRemark {
+                          html
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Lady Bites Blog - RSS",
+            match: "^/blog/",
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
