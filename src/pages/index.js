@@ -51,7 +51,7 @@ const IndexPage = () => (
     </header>
     <section className={Styles.belowFold} id="BelowTheFold">
       <h3>Ladies Top Choice Recipes</h3>
-      // ! USe THIS: https://codepen.io/blindingstars/pen/vEQORr */
+      {/* USe THIS: https://codepen.io/blindingstars/pen/vEQORr  */}
       <a
         href="#BlogPosts"
         className={Styles.downArrow}
