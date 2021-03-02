@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Styles from "../styles/components/header.module.scss";
 
@@ -7,16 +7,24 @@ const Header = () => (
   <nav role="navigation" aria-label="Main" className={Styles.containerNav}>
     <ul>
       <li>
-        <Link to="/blog">Blog</Link>
+        <AniLink paintDrip hex="#003d4e" to="/blog">
+          Blog
+        </AniLink>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <AniLink paintDrip hex="#fff691" to="/about">
+          About
+        </AniLink>
       </li>
       <li>
-        <Link to="/learning">Learning</Link>
+        <AniLink paintDrip hex="#b8caff" to="/learning">
+          Learning
+        </AniLink>
       </li>
       <li>
-        <Link to="/recipes">Recipes</Link>
+        <AniLink paintDrip hex="#abedff" to="/recipes">
+          Recipes
+        </AniLink>
       </li>
     </ul>
     {/* </div> */}
