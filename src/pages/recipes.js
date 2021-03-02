@@ -1,5 +1,6 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Img from "gatsby-image";
 
 import Styles from "../styles/RecipesPage.module.scss";
@@ -31,7 +32,13 @@ const Recipes = ({ data }) => {
           <section className={Styles.allArticles}>
             {allRecipes.edges.map(({ node: recipe }) => (
               <article key={recipe.id}>
-                <Link to={`/recipe/${recipe.slug}`}>
+                <AniLink
+                  cover
+                  direction="left"
+                  duration={3}
+                  bg={`url(${recipe.mainImage.file.url}) center / cover no-repeat fixed padding-box content-box white`}
+                  to={`/recipe/${recipe.slug}`}
+                >
                   <Img
                     fixed={recipe.mainImage.fixed}
                     alt={recipe.mainImage.description}
@@ -48,7 +55,7 @@ const Recipes = ({ data }) => {
                     <small>Feeds: {recipe.feedsAmount}</small>
                     <small>Time: {recipe.totalTime}m</small>
                   </div>
-                </Link>
+                </AniLink>
               </article>
             ))}
           </section>
@@ -60,9 +67,6 @@ const Recipes = ({ data }) => {
 
 export default Recipes;
 
-// {
-//   /* // ! USe THIS: https://codepen.io/blindingstars/pen/vEQORr */
-// }
 export const AllRecipes = graphql`
   query GetAllRecipes {
     allContentfulRecipe(limit: 500, sort: { fields: publishDate, order: ASC }) {
@@ -83,6 +87,9 @@ export const AllRecipes = graphql`
             description
             fixed(height: 175, width: 325) {
               ...GatsbyContentfulFixed_tracedSVG
+            }
+            file {
+              url
             }
           }
         }

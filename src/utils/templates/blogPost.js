@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Img from "gatsby-image";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -36,7 +37,9 @@ const BlogPost = (props) => {
         <ul className={Styles.tags}>
           {keywordTags.map((tag) => (
             <li>
-              <Link to="/blog">{tag}</Link>
+              <AniLink fade to="/blog">
+                {tag}
+              </AniLink>
             </li>
           ))}
         </ul>
@@ -52,12 +55,14 @@ const BlogPost = (props) => {
         </div>
         <small>{publishDate}</small>
         {attachedToRecipe && (
-          <Link
+          <AniLink
+            cover
+            bg="#b8caff"
             className={Styles.recLink}
             to={`/recipe/${connectedRecipe.slug}`}
           >
             View the {connectedRecipe.title} Full Recipe!
-          </Link>
+          </AniLink>
         )}
         <hr />
         <main>
@@ -76,19 +81,21 @@ const BlogPost = (props) => {
           ></div>
           <hr />
           {attachedToRecipe && (
-            <Link
+            <AniLink
+              cover
+              bg="#b8caff"
               className={Styles.recLink}
               to={`/recipe/${connectedRecipe.slug}`}
             >
               View the {connectedRecipe.title} Full Recipe!
-            </Link>
+            </AniLink>
           )}
           <hr />
         </main>
         <aside className={Styles.author}>
-          <Link to="/about">
+          <AniLink paintDrip hex="#fff691" to="/about">
             <h5>Lauren Wilder</h5>
-          </Link>
+          </AniLink>
           <StaticImage
             src="../../images/angel.jpg"
             alt="Headshot of Lauren Wilder"
@@ -105,18 +112,22 @@ const BlogPost = (props) => {
           <ul>
             <li>
               {previous && (
-                <Link to={`/blog/${previous.node.slug}`}>
+                <AniLink
+                  swipe
+                  direction="left"
+                  to={`/blog/${previous.node.slug}`}
+                >
                   <AiOutlineArrowLeft />
                   Prev
-                </Link>
+                </AniLink>
               )}
             </li>
             <li>
               {next && (
-                <Link to={`/blog/${next.node.slug}`}>
+                <AniLink swipe direction="right" to={`/blog/${next.node.slug}`}>
                   Next
                   <AiOutlineArrowRight />
-                </Link>
+                </AniLink>
               )}
             </li>
           </ul>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Img from "gatsby-image";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -44,12 +45,16 @@ const RecipePost = (props) => {
         <ul className={Styles.tags}>
           {keywordTags.map((tag) => (
             <li>
-              <Link to="/recipes">{tag}</Link>
+              <AniLink fade to="/recipes">
+                {tag}
+              </AniLink>
             </li>
           ))}
           {dietaryTags.map((tag) => (
             <li>
-              <Link to="/recipes">{tag}</Link>
+              <AniLink fade to="/recipes">
+                {tag}
+              </AniLink>
             </li>
           ))}
         </ul>
@@ -96,9 +101,9 @@ const RecipePost = (props) => {
           <hr />
         </main>
         <aside className={Styles.author}>
-          <Link to="/about">
+          <AniLink paintDrip hex="#fff691" to="/about">
             <h5>Lauren Wilder</h5>
-          </Link>
+          </AniLink>
           <StaticImage
             src="../../images/angel.jpg"
             alt="Headshot of Lauren Wilder"
@@ -115,18 +120,26 @@ const RecipePost = (props) => {
           <ul>
             <li>
               {previous && (
-                <Link to={`/recipe/${previous.node.slug}`}>
+                <AniLink
+                  swipe
+                  direction="left"
+                  to={`/recipe/${previous.node.slug}`}
+                >
                   <AiOutlineArrowLeft />
                   Prev
-                </Link>
+                </AniLink>
               )}
             </li>
             <li>
               {next && (
-                <Link to={`/recipe/${next.node.slug}`}>
+                <AniLink
+                  swipe
+                  direction="right"
+                  to={`/recipe/${next.node.slug}`}
+                >
                   Next
                   <AiOutlineArrowRight />
-                </Link>
+                </AniLink>
               )}
             </li>
           </ul>
