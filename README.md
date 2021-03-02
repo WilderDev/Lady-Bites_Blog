@@ -59,10 +59,9 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 2.  Learning Page
 3.  Animations / Loaders
 4.  Page Transitions
-5.  RSS
-6.  Home Page
-7.  Social Sharing
-8.  404 Page
+5.  Home Page
+6.  Social Sharing
+7.  404 Page
 
 ## Far Future Possibilities
 

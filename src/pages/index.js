@@ -1,5 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import TransitionLink from "gatsby-plugin-transition-link";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";

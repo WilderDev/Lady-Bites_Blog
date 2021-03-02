@@ -79,6 +79,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
