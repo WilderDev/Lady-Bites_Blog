@@ -1,5 +1,6 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Img from "gatsby-image";
 
 import Styles from "../styles/BlogPage.module.scss";
@@ -30,7 +31,13 @@ const Blog = ({ data }) => {
           <section className={Styles.allArticles}>
             {allPosts.edges.map(({ node: post }) => (
               <article key={post.id}>
-                <Link to={`/blog/${post.slug}`}>
+                <AniLink
+                  cover
+                  direction="left"
+                  duration={3}
+                  bg={`url(${post.featuredImage.file.url}) center / cover no-repeat fixed padding-box content-box white`}
+                  to={`/blog/${post.slug}`}
+                >
                   <Img
                     fixed={post.featuredImage.fixed}
                     alt={post.featuredImage.description}
@@ -39,7 +46,7 @@ const Blog = ({ data }) => {
                     Published: <strong>{post.publishDate}</strong>
                   </small>
                   <h3>{post.title}</h3>
-                </Link>
+                </AniLink>
               </article>
             ))}
           </section>
@@ -70,6 +77,9 @@ export const AllPosts = graphql`
             description
             fixed(height: 175, width: 325) {
               ...GatsbyContentfulFixed_tracedSVG
+            }
+            file {
+              url
             }
             # gatsbyImageData(
             #   width: 250
