@@ -10,7 +10,7 @@ module.exports = {
     description: `Blog website for Lady-Bites Brand - Recipes, Videos & Blogs`,
     image: "./cookie-logo.png",
     author: `Lauren Wilder`,
-    siteUrl: `https://ladybites.netlify.app/`,
+    siteUrl: `https://ladybitesblog.com/`,
     image: `./images/cookie-logo.png`,
     keywords: [
       "Profession Pastry Chef",
@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://www.ladybites.netlify.app`,
+        siteUrl: `https://www.ladybitesblog.com`,
       },
     },
     {
@@ -62,16 +62,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: `gatsby-plugin-purgecss`,
-    //   options: {
-    //     printRejected: true, // Print removed selectors and processed file names
-    //     // develop: true, // Enable while using `gatsby develop`
-    //     whitelist: ["blockquote"], // Don't remove this selector
-    //     // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-    //     // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-    //   },
-    // },
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -205,8 +195,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.ladybites.netlify.app",
-        sitemap: "https://www.ladybites.netlify.app/sitemap.xml",
+        host: "https://www.ladybitesblog.com",
+        sitemap: "https://www.ladybitesblog.com/sitemap.xml",
         env: {
           development: {
             policy: [{ userAgent: "*", disallow: ["/"] }],

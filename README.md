@@ -13,7 +13,7 @@ Light: #fdfff5
 Grays: [#999999, #666666, #7a7a7a, #bfbfbf]
 
 **Copywriting**
-Domain: https://ladybites.netlify.app/
+Domain: https://ladybitesblog.com/
 Slogan: Happy Belly, Whole Heart
 Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
