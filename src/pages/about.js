@@ -67,6 +67,7 @@ const About = () => (
         name="contact"
         method="POST"
         data-netlify="true"
+        action="/blog/"
         netlify-honeypot="bot-field"
       >
         <label className={Styles.hidden}>
