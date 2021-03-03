@@ -31,7 +31,7 @@ const BlogPost = (props) => {
         description={introduction.childMarkdownRemark.html}
         isArticle={true}
         keywords={keywordTags}
-        image={featuredImage.resize.src}
+        image={featuredImage.file.url}
       />
       <article className={Styles.container}>
         <h1>{title}</h1>
@@ -163,8 +163,8 @@ export const pageQuery = graphql`
         }
       }
       featuredImage {
-        resize {
-          src
+        file {
+          url
         }
         fluid(maxWidth: 700) {
           ...GatsbyContentfulFluid_tracedSVG

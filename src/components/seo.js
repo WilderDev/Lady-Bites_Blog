@@ -23,8 +23,8 @@ function SEO({ description, lang, keywords, title, image: pImg, isArticle }) {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const metaImage =
-    pImg && pImg.src
-      ? `${site.siteMetadata.siteUrl}${pImg.src}`
+    pImg && pImg.file.url
+      ? `${site.siteMetadata.siteUrl}${pImg.file.url}`
       : `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`;
   const metaKeywords =
     keywords.join(", ") || site.siteMetadata.keywords.join(", ");
