@@ -146,6 +146,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-social9-socialshare`,
+      options: {
+        content: `c0972104cd9f4db897012e0fc05f2382`,
+        async: true,
+        defer: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Lady Bites Blog`,

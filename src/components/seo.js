@@ -22,10 +22,9 @@ function SEO({ description, lang, keywords, title, image: pImg, isArticle }) {
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
-  const metaImage =
-    pImg && pImg.file.url
-      ? `${site.siteMetadata.siteUrl}${pImg.file.url}`
-      : `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`;
+  const metaImage = pImg
+    ? `${site.siteMetadata.siteUrl}${pImg}`
+    : `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`;
   const metaKeywords =
     keywords.join(", ") || site.siteMetadata.keywords.join(", ");
   const pageType = isArticle ? "article" : "website";
