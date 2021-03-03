@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-function SEO({ description, lang, keywords, title, image, isArticle }) {
+function SEO({ description, lang, keywords, title, image: pImg, isArticle }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -22,7 +22,10 @@ function SEO({ description, lang, keywords, title, image, isArticle }) {
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
-  const metaImage = image || site.siteMetadata.image;
+  const metaImage =
+    pImg && pImg.src
+      ? `${site.siteMetadata.siteUrl}${pImg.src}`
+      : `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`;
   const metaKeywords =
     keywords.join(", ") || site.siteMetadata.keywords.join(", ");
   const pageType = isArticle ? "article" : "website";
@@ -74,6 +77,10 @@ function SEO({ description, lang, keywords, title, image, isArticle }) {
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: `twitter:image`,
+          content: metaImage,
         },
         {
           name: `twitter:description`,
