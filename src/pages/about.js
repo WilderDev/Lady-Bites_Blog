@@ -67,11 +67,11 @@ const About = () => (
         name="contact"
         method="POST"
         data-netlify="true"
-        // netlify-honeypot="bot-field"
+        netlify-honeypot="bot-field"
         action=""
       >
+        <input className="hidden" name="bot-field" type="hidden" />
         <input className="hidden" name="form-name" value="contact" />
-        {/* <input className="hidden" name="bot-field" type="hidden" /> */}
 
         <label htmlFor="name">
           Your Name:{" "}
@@ -90,6 +90,7 @@ const About = () => (
           Message:{" "}
           <textarea
             name="message"
+            type="text"
             placeholder="Hi Lauren! I Love your work and was wondering . . . "
             id="message"
           ></textarea>
