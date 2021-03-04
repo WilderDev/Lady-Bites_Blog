@@ -69,10 +69,6 @@
     align-items: center;
     flex-direction: column;
 
-    .hidden {
-      display: none;
-    }
-
     label,
     input,
     textarea {
@@ -87,6 +83,10 @@
         border: 3px solid #fff691;
         outline: none;
       }
+
+      // .hidden {
+      //   display: none !important;
+      // }
     }
 
     button {

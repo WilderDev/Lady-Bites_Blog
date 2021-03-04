@@ -71,7 +71,12 @@ const About = () => (
         action=""
       >
         <input className="hidden" name="bot-field" type="hidden" />
-        <input className="hidden" name="form-name" value="contact" />
+        <input
+          type="hidden"
+          className="hidden"
+          name="form-name"
+          value="contact"
+        />
 
         <label htmlFor="name">
           Your Name:{" "}
