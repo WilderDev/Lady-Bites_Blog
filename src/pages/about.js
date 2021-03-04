@@ -67,11 +67,11 @@ const About = () => (
         name="contact"
         method="POST"
         data-netlify="true"
-        netlify-honeypot="bot-field"
-        action="/"
+        // netlify-honeypot="bot-field"
+        action=""
       >
-        <input className="hidden" name="bot-field" type="hidden" />
-        <input className="hidden" name="contact" value="contact" />
+        <input className="hidden" name="form-name" value="contact" />
+        {/* <input className="hidden" name="bot-field" type="hidden" /> */}
 
         <label htmlFor="name">
           Your Name:{" "}
