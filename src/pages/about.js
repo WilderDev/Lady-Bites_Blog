@@ -67,25 +67,31 @@ const About = () => (
         name="contact"
         method="POST"
         data-netlify="true"
-        action=""
         netlify-honeypot="bot-field"
+        action="/"
       >
-        <label className={Styles.hidden}>
-          Don’t fill this out if you’re human:{" "}
-          <input name="bot-field" name="contact" type="hidden" />
+        <input className="hidden" name="bot-field" type="hidden" />
+        <input className="hidden" name="contact" value="contact" />
+
+        <label htmlFor="name">
+          Your Name:{" "}
+          <input type="text" name="name" placeholder="Jane Doe" id="name" />
         </label>
-        <label>
-          Your Name: <input type="text" name="name" placeholder="Jane Doe" />
-        </label>
-        <label>
+        <label htmlFor="email">
           Your Email:{" "}
-          <input type="email" name="email" placeholder="JaneDoe@gmail.com" />
+          <input
+            type="email"
+            name="email"
+            placeholder="JaneDoe@gmail.com"
+            id="email"
+          />
         </label>
-        <label>
+        <label htmlFor="message">
           Message:{" "}
           <textarea
             name="message"
             placeholder="Hi Lauren! I Love your work and was wondering . . . "
+            id="message"
           ></textarea>
         </label>
         <button type="submit">Send</button>
