@@ -31,7 +31,8 @@ const Learning = () => {
             I post regularly on Youtube. If you would like to join in making
             tasty treats go <a href="#"> Here!</a>
           </p>
-          <h3>Most Recent Videos</h3>
+          <h3>Most Recent Video</h3>
+          <section className={Styles.contentContainer}></section>
           <a
             href="#courses"
             className={Styles.downArrow}
@@ -47,9 +48,10 @@ const Learning = () => {
           <h2>Courses</h2>
           <p>
             If you are insterested in improving your baking skills and
-            knowledge, check out my featured courses<a href="#">Here!</a>
+            knowledge, check out my featured courses <a href="#">Here!</a>
           </p>
           <h3>Coming Soon. . .</h3>
+          <section className={Styles.contentContainer}></section>
           <a
             href="#articles"
             className={Styles.downArrow}
@@ -71,7 +73,8 @@ const Learning = () => {
               Here!
             </AniLink>
           </p>
-          <h3>Ladies Favorite Articles For You!</h3>
+          <h3>Ladies Favorite Article For You!</h3>
+          <section className={Styles.contentContainer}></section>
           <a
             href="#top"
             className={Styles.downArrow}
