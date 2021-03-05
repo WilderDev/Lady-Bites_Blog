@@ -1,22 +1,58 @@
 .container {
-  h1 {
-    margin: 0;
-    text-align: center;
+  .courseSection,
+  .articleSection {
+    position: relative;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 2em 4em;
+
+    h2 {
+      font-size: 5rem;
+    }
+  }
+  .videoSection {
+    position: relative;
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+    padding: 1em 3em;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .downArrow {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    color: #fbfbfb;
+    transition: all 350ms ease-in;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      color: #abedff;
+    }
+
+    .arrowIcon {
+      font-size: 3.1rem;
+    }
   }
 }
-.videoSection {
-  position: relative;
-  min-height: calc(100vh - 100px);
-  max-height: calc(100vh - 100px);
-}
-
-.courseSection,
+.videoSection,
 .articleSection {
-  position: relative;
-  min-height: 100vh;
-  max-height: 100vh;
+  .arrowIcon {
+    color: #1c1a0d;
+  }
 }
 
 .courseSection {
   background: #222;
+
+  h2,
+  h3,
+  p {
+    color: #fbfbfb;
+  }
 }

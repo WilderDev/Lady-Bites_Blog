@@ -26,7 +26,6 @@ const Learning = () => {
       ;
       <div className={Styles.container}>
         <section id="vid" className={Styles.videoSection}>
-          <h1>Learning Center</h1>
           <h2>Videos</h2>
           <p>
             I post regularly on Youtube. If you would like to join in making
@@ -75,7 +74,7 @@ const Learning = () => {
           <h3>Ladies Favorite Articles For You!</h3>
           <a
             href="#top"
-            className={Styles.upArrow}
+            className={Styles.downArrow}
             name="arrow"
             rel="search"
             type="button"
