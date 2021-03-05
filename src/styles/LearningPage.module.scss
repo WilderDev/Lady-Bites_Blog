@@ -71,10 +71,111 @@
 
 .contentContainer {
   max-width: 800px;
-  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
   padding: 25px;
   text-align: center;
   margin: 20px auto;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
     0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+// !! MEDIA QUERIES
+@media screen and (max-width: 1025px) and (orientation: portrait) {
+  .container {
+    p {
+      font-size: 1.3rem;
+      padding-bottom: 50px;
+    }
+
+    .downArrow {
+      left: 50%;
+      bottom: 10%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+  .container {
+    p {
+      margin-bottom: 30px;
+    }
+    .courseSection,
+    .videoSection,
+    .articleSection {
+      min-height: 100vw;
+      max-height: 100vw;
+    }
+    .contentContainer {
+      min-height: 37vw;
+      max-height: 37vw;
+    }
+  }
+}
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  .container {
+    p {
+      font-size: 1.3rem;
+      padding-bottom: 30px;
+    }
+
+    .downArrow {
+      bottom: 5%;
+    }
+  }
+}
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .container {
+    text-align: center;
+
+    .videoSection {
+      margin-top: -20px;
+      min-height: 100vh;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .courseSection,
+    .articleSection {
+      padding: 1.5em 3em;
+      min-height: 110vh;
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      padding-bottom: 20px;
+      max-width: 75ch;
+      padding-left: 0;
+    }
+
+    .downArrow {
+      bottom: 5%;
+    }
+  }
+}
+@media screen and (max-width: 415px) and (orientation: portrait) {
+  .videoSection,
+  .articleSection,
+  .courseSection {
+    p {
+      padding-bottom: 30px;
+    }
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: -10px;
+    }
+  }
+}
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  .container {
+    .videoSection,
+    .articleSection,
+    .courseSection {
+      padding: 1.5em 1em;
+      min-height: 115vh;
+    }
+  }
 }

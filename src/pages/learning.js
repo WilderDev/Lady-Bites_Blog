@@ -66,9 +66,8 @@ const Learning = () => {
         <section id="articles" className={Styles.articleSection}>
           <h2>Articles</h2>
           <p>
-            Do you love to learn about the deeper aspects of baking? Or maybe
-            you want to dive inside the mind of how a pastry chef thinks. . .
-            Either way, come join my learning journey{" "}
+            Dive inside the mind of how a pastry chef thinks. . . Come join my
+            learning journey{" "}
             <AniLink paintDrip hex="#003d4e" to="/blog">
               Here!
             </AniLink>
