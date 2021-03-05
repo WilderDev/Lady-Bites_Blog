@@ -83,10 +83,6 @@
         border: 3px solid #fff691;
         outline: none;
       }
-
-      // .hidden {
-      //   display: none !important;
-      // }
     }
 
     button {
@@ -105,6 +101,78 @@
       &:focus {
         transform: scale(1.1);
         background: #fff584;
+      }
+    }
+  }
+}
+@media screen and (max-width: 916px) {
+  .container .split {
+    flex-direction: column-reverse;
+
+    .bio {
+      width: 70%;
+    }
+
+    .picture {
+      width: 65%;
+      margin-bottom: 20px;
+    }
+  }
+  .contactForm form {
+    width: 90%;
+
+    label,
+    input,
+    textarea {
+      width: 90%;
+    }
+
+    button {
+      width: 33%;
+    }
+  }
+}
+@media screen and (max-width: 541px) {
+  .container .split {
+    .bio {
+      width: 75%;
+    }
+
+    .picture {
+      width: 75%;
+    }
+  }
+  .contactForm form {
+    label,
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    button {
+      width: 45%;
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .container .split {
+    .bio {
+      width: 85%;
+    }
+
+    .picture {
+      width: 85%;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+  }
+  .contactForm {
+    padding: 3em 2em;
+
+    form {
+      width: 100%;
+      button {
+        width: 65%;
       }
     }
   }
