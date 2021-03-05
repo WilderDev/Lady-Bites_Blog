@@ -1,2 +1,22 @@
 .container {
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+}
+.videoSection {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
+}
+
+.courseSection,
+.articleSection {
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.courseSection {
+  background: #222;
 }

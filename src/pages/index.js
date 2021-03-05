@@ -37,7 +37,6 @@ const IndexPage = () => (
         </h2>
         <p>Typeerpye</p>
       </section>
-      {/* // ! Change to buttons!!!! */}
       <a
         href="#BelowTheFold"
         className={Styles.downArrow}

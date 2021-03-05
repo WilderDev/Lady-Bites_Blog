@@ -55,7 +55,6 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
 # Todo List
 
-1.  About Page
 2.  Learning Page
 3.  Home Page
 4.  404 Page
