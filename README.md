@@ -55,15 +55,15 @@ Keywords: Cooking Tutorials, Professional Pastry Chef, Food Blog. . .
 
 # Todo List
 
-2.  Learning Page
-3.  Home Page
-4.  404 Page
-5.  https://search.google.com/search-console/inspect?resource_id=sc-domain%3Aladybitesblog.com&id=Iv-SFtZQ8XSRF9h9w5IbrQ
+1.  Learning Page
+2.  Home Page
+3.  https://search.google.com/search-console/inspect?resource_id=sc-domain%3Aladybitesblog.com&id=Iv-SFtZQ8XSRF9h9w5IbrQ
 
 ## Far Future Possibilities
 
-1. Internationalization
+1. Better Social Sharing (Instagram, Pintrest)
 2. Search Functionality (By tags)
 3. Web Push
-4. Better Social Sharing
-5. Thank you page
+4. Thank you page
+5. 404 Page
+6. Internationalization
