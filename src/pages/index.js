@@ -123,7 +123,7 @@ export const AllRecipes = graphql`
           mainImage {
             title
             description
-            fixed(height: 175, width: 325) {
+            fixed(height: 250, width: 350) {
               ...GatsbyContentfulFixed_tracedSVG
             }
             file {
