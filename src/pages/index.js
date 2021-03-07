@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => {
       </header>
       <section className={Styles.belowFold} id="BelowTheFold">
         <h3>Ladies Top Choice Recipes</h3>
-        <section className={Styles.allArticles}>
+        {/* <section className={Styles.allArticles}>
           {allRecipes.edges.map(({ node: recipe }) => (
             <article key={recipe.id}>
               <Link to={`/recipe/${recipe.slug}`}>
@@ -78,7 +78,7 @@ const IndexPage = ({ data }) => {
               </Link>
             </article>
           ))}
-        </section>
+        </section> */}
         <a
           href="#BlogPosts"
           className={Styles.downArrow}

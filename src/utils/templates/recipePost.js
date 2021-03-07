@@ -43,20 +43,22 @@ const RecipePost = (props) => {
           <b>Time to Make:</b> {totalTime} min
         </small>
         <ul className={Styles.tags}>
-          {keywordTags.map((tag) => (
-            <li>
-              <AniLink fade to="/recipes">
-                {tag}
-              </AniLink>
-            </li>
-          ))}
-          {dietaryTags.map((tag) => (
-            <li>
-              <AniLink fade to="/recipes">
-                {tag}
-              </AniLink>
-            </li>
-          ))}
+          {keywordTags &&
+            keywordTags.map((tag) => (
+              <li>
+                <AniLink fade to="/recipes">
+                  {tag}
+                </AniLink>
+              </li>
+            ))}
+          {dietaryTags &&
+            dietaryTags.map((tag) => (
+              <li>
+                <AniLink fade to="/recipes">
+                  {tag}
+                </AniLink>
+              </li>
+            ))}
         </ul>
         <div className={Styles.heroImg}>
           <Img
@@ -83,9 +85,7 @@ const RecipePost = (props) => {
             <article>
               <h3 className={Styles.heading}>Nutrition</h3>
               <ul className={Styles.nutrition}>
-                {nutritionInfo.map((inf) => (
-                  <li>{inf}</li>
-                ))}
+                {nutritionInfo && nutritionInfo.map((inf) => <li>{inf}</li>)}
               </ul>
             </article>
           </section>
