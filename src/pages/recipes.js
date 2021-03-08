@@ -35,8 +35,9 @@ const Recipes = ({ data }) => {
                 <AniLink
                   cover
                   direction="left"
-                  duration={3}
-                  bg={`url(${recipe.mainImage.file.url}) center / cover no-repeat fixed padding-box content-box white`}
+                  duration={2.5}
+                  // bg="#003d4e"
+                  bg={`url(${data.file.childImageSharp.fluid.src}) center / cover no-repeat fixed padding-box content-box white`}
                   to={`/recipe/${recipe.slug}`}
                 >
                   <Img
@@ -92,6 +93,13 @@ export const AllRecipes = graphql`
               url
             }
           }
+        }
+      }
+    }
+    file(relativePath: { eq: "transition-bg.jpg" }) {
+      childImageSharp {
+        fluid {
+          src
         }
       }
     }

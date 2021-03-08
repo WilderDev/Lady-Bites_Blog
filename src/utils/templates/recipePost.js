@@ -82,12 +82,16 @@ const RecipePost = (props) => {
                 ))}
               </ul>
             </article>
-            <article>
-              <h3 className={Styles.heading}>Nutrition</h3>
-              <ul className={Styles.nutrition}>
-                {nutritionInfo && nutritionInfo.map((inf) => <li>{inf}</li>)}
-              </ul>
-            </article>
+            {nutritionInfo && (
+              <article>
+                <h3 className={Styles.heading}>Nutrition</h3>
+                <ul className={Styles.nutrition}>
+                  {nutritionInfo.map((inf) => (
+                    <li>{inf}</li>
+                  ))}
+                </ul>
+              </article>
+            )}
           </section>
           <hr />
           <h2 className={Styles.headingB}>Instructions</h2>
