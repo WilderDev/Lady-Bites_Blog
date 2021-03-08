@@ -27,12 +27,16 @@ const About = () => (
         <div className={Styles.bio}>
           <h2>A Little About Me.</h2>
           <p>
-            Ahhh, the feeling of true <strong>serenity</strong>. There have been
-            many moments when this emotion has washed over me - most of them are
-            linked to being in the kitchen crafting something yummy.
+            Ahhh, the feeling of true <strong>serenity</strong>. . .
           </p>
           <p>
-            <strong>The kitchen is the soul of the home.</strong> It is here
+            There have been many moments when this emotion has washed over me -
+            most of them are linked to being in the kitchen crafting something
+            yummy.
+          </p>
+          <p>
+            Yah know, I believe that{" "}
+            <strong>the kitchen is the soul of the home.</strong> It is here
             where we experiment with recipes to better understand how
             ingredients work together. In this space we can make dish after
             dish, feeling completely satisfied when it comes out perfectly as
@@ -43,12 +47,18 @@ const About = () => (
             <strong> passion and curiosity</strong> that has been with me since
             I was little. It is not uncommon to reminisce on my younger years,
             climbing onto a chair to reach the counter in order to make a batch
-            of shortbread from my <i>Raggedy Anne Cookbook</i>.
+            of shortbread from my <i>Raggedy Anne Cookbook</i>. So many great
+            memories!
           </p>
           <p>
             Well, thank you for stopping by! I am so <strong>grateful</strong>{" "}
             we can share in this journey & I hope these recipes bring about many
             loving memories for you to come!
+          </p>
+          <p>
+            <small>
+              Feel free to contact me at: <i>LadyBitesBlog@gmail.com</i>
+            </small>
           </p>
         </div>
         <div className={Styles.picture}>
