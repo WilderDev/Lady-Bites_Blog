@@ -39,8 +39,8 @@ const About = () => (
             <strong>the kitchen is the soul of the home.</strong> It is here
             where we experiment with recipes to better understand how
             ingredients work together. In this space we can make dish after
-            dish, feeling completely satisfied when it comes out perfectly as
-            planned. Then we get to share our creation with those we love most!
+            dish, feeling completely satisfied when it comes out perfectly. Then
+            we get to share our creation with those we love most!
           </p>
           <p>
             Ultimately, I always rediscover a{" "}
@@ -52,8 +52,8 @@ const About = () => (
           </p>
           <p>
             Well, thank you for stopping by! I am so <strong>grateful</strong>{" "}
-            we can share in this journey & I hope these recipes bring about many
-            loving memories for you to come!
+            we can share in this journey & I hope these recipes bring you many
+            loving memories!
           </p>
           <p>
             <small>
