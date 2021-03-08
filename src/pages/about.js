@@ -27,26 +27,28 @@ const About = () => (
         <div className={Styles.bio}>
           <h2>A Little About Me.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est
-            atque fugit eius numquam soluta necessitatibus possimus aperiam
-            inventore <strong>aspernatur</strong> architecto, id, sequi
-            excepturi iure.
+            Ahhh, the feeling of true <strong>serenity</strong>. There have been
+            many moments when this emotion has washed over me - most of them are
+            linked to being in the kitchen crafting something yummy.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est
-            atque fugit eius <strong>numquam</strong> soluta necessitatibus
-            possimus aperiam inventore aspernatur architecto, id, sequi
-            excepturi iure. Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Vitae, reprehenderit! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aut qui tempore quod.
+            <strong>The kitchen is the soul of the home.</strong> It is here
+            where we experiment with recipes to better understand how
+            ingredients work together. In this space we can make dish after
+            dish, feeling completely satisfied when it comes out perfectly as
+            planned. Then we get to share our creation with those we love most!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis autem
-            error eaque <i>aliquid recusandae fugiat</i> consequuntur
-            distinctio, quas dignissimos beatae maiores, non et sed repudiandae,
-            dolores temporibus sequi optio corporis? Iusto dignissimos provident
-            voluptates consequatur error, aspernatur{" "}
-            <strong> velit architecto et.</strong>
+            Ultimately, I always rediscover a{" "}
+            <strong> passion and curiosity</strong> that has been with me since
+            I was little. It is not uncommon to reminisce on my younger years,
+            climbing onto a chair to reach the counter in order to make a batch
+            of shortbread from my <i>Raggedy Anne Cookbook</i>.
+          </p>
+          <p>
+            Well, thank you for stopping by! I am so <strong>grateful</strong>{" "}
+            we can share in this journey & I hope these recipes bring about many
+            loving memories for you to come!
           </p>
         </div>
         <div className={Styles.picture}>
