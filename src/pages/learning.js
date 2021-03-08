@@ -29,7 +29,15 @@ const Learning = () => {
           <h2>Videos</h2>
           <p>
             I post regularly on Youtube. If you would like to join in making
-            tasty treats go <a href="#"> Here!</a>
+            tasty treats go{" "}
+            <a
+              href="https://www.youtube.com/channel/UCsSqzue93zHi0JlZAaQyZYw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Here!
+            </a>
           </p>
           <h3>Most Recent Video</h3>
           <section className={Styles.contentContainer}></section>
@@ -48,7 +56,14 @@ const Learning = () => {
           <h2>Courses</h2>
           <p>
             If you are insterested in improving your baking skills and
-            knowledge, check out my featured courses <a href="#">Here!</a>
+            knowledge, check out my featured courses{" "}
+            <a
+              href="https://www.youtube.com/channel/UCsSqzue93zHi0JlZAaQyZYw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Here!
+            </a>
           </p>
           <h3>Coming Soon. . .</h3>
           <section className={Styles.contentContainer}></section>

@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
-import Img from "gatsby-image";
+// import { Link } from "gatsby";
+// import Img from "gatsby-image";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
@@ -10,7 +10,7 @@ import { AiFillDownCircle } from "@react-icons/all-files/ai/AiFillDownCircle";
 import { AiFillUpCircle } from "@react-icons/all-files/ai/AiFillUpCircle";
 
 const IndexPage = ({ data }) => {
-  const allRecipes = data.allContentfulRecipe;
+  // const allRecipes = data.allContentfulRecipe;
 
   return (
     <Layout>
