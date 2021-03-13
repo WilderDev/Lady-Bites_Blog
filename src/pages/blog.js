@@ -34,8 +34,8 @@ const Blog = ({ data }) => {
                 <AniLink
                   cover
                   direction="left"
-                  duration={3}
-                  bg={`url(${post.featuredImage.file.url}) center / cover no-repeat fixed padding-box content-box white`}
+                  duration={0.9}
+                  bg="#003d4e"
                   to={`/blog/${post.slug}`}
                 >
                   <Img

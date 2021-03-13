@@ -35,9 +35,8 @@ const Recipes = ({ data }) => {
                 <AniLink
                   cover
                   direction="left"
-                  duration={0.5}
-                  // bg="#003d4e"
-                  // bg={`url(${data.file.childImageSharp.fluid.src}) center / cover no-repeat fixed padding-box content-box white`}
+                  duration={0.8}
+                  bg="#003d4e"
                   to={`/recipe/${recipe.slug}`}
                 >
                   <Img
